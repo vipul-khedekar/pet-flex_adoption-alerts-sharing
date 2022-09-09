@@ -1,6 +1,10 @@
 :root {
     --black: #000000;
-    --white: #ffffff;
+    --choco: #bc672c;
+    --cream: #ecddce;
+    --sunny: #eef4b1;
+    --sea: #acd7eb;
+    --marine: #00396a;
 }
 
 html, body {
@@ -28,12 +32,6 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
-}
-
-#root {
-    height: 100px;
-    width: 100px;
-    background-color: #000000
 }
 
 @tailwind base;
