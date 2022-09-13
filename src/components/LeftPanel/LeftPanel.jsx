@@ -4,7 +4,7 @@ import Options from "./Options";
 
 function LeftPanel() {
   return (
-    <section className="flex flex-col flex-1 justify-start items-center gap-6">
+    <section className="flex flex-col flex-1 justify-start items-center gap-4">
       <Logo />
 
       <Profile />
