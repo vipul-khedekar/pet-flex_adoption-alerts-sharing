@@ -2,9 +2,9 @@ import DefaultProfilePic from "../../images/profile-picture.jpg";
 
 function Profile() {
   return (
-    <article className="bg-cream h-72 w-64 p-4 mt-28 rounded-lg relative">
+    <article className="bg-cream h-72 sm:w-60 lg:w-full p-4 mt-24 rounded-lg relative">
       <img
-        className="h-56 w-56 object-cover rounded-lg absolute top-[-30%] left-[50%] translate-x-[-50%]"
+        className="h-52 w-52 object-cover rounded-lg absolute top-[-20%] left-[50%] translate-x-[-50%]"
         src={DefaultProfilePic}
         alt="profile-pic"
       />

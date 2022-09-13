@@ -7,14 +7,14 @@ import {
 
 function Options() {
   return (
-    <article className="bg-cream h-16 w-64 flex justify-evenly items-center rounded-lg">
-      <IoPersonOutline className="text-2xl scale-100 ease-in duration-150 hover:scale-110" />
+    <article className="bg-cream h-16 sm:w-60 lg:w-full flex justify-evenly items-center rounded-lg">
+      <IoPersonOutline className="text-2xl scale-100 ease-in duration-150 cursor-pointer hover:scale-110" />
 
-      <IoBookmarksOutline className="text-2xl scale-100 ease-in duration-150 hover:scale-110" />
+      <IoBookmarksOutline className="text-2xl scale-100 ease-in duration-150 cursor-pointer hover:scale-110" />
 
-      <IoMdNotificationsOutline className="text-2xl scale-100 ease-in duration-150 hover:scale-110" />
+      <IoMdNotificationsOutline className="text-2xl scale-100 ease-in duration-150 cursor-pointer hover:scale-110" />
 
-      <IoLogOutOutline className="text-2xl scale-100 ease-in duration-150 hover:scale-110" />
+      <IoLogOutOutline className="text-2xl scale-100 ease-in duration-150 cursor-pointer hover:scale-110" />
     </article>
   );
 }
