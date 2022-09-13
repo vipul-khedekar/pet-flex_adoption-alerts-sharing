@@ -27,7 +27,7 @@ body {
 }
 
 article {
-    box-shadow: 0 4px 10px var(--steel);
+    box-shadow: 0 1px 4px var(--steel);
 }
 
 button:active {
