@@ -4,7 +4,7 @@ function SearchBar() {
   return (
     <article className="bg-cream h-14 w-full flex justify-center items-center p-2 rounded-lg relative">
       <input
-        className="w-full p-2 pl-8 rounded-md"
+        className="bg-sea w-full p-2 pl-8 rounded-md outline-none text-marine"
         type="text"
         placeholder="Search for specific adoption alerts"
       />

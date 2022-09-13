@@ -6,7 +6,7 @@ function Poster() {
   return (
     <article className="h-36 w-full bg-cream flex flex-col justify-between items-center gap-3 p-4 rounded-lg">
       <textarea
-        className="h-16 w-full p-2 rounded-lg resize-none"
+        className="bg-sea h-16 w-full p-2 rounded-lg resize-none outline-none text-marine"
         name="poster"
         id="poster"
         placeholder="Post an update or create an adoption alert"
