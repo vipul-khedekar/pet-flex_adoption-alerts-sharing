@@ -1,8 +1,9 @@
 :root {
-    --black: #000000;
+    --nero: #242424;
+    --steel: #6b7378;
     --choco: #bc672c;
-    --sunny: #eef4b1;
     --cream: #ecddce;
+    --sunny: #eef4b1;
     --sea: #acd7eb;
     --marine: #00396a;
 }
@@ -22,6 +23,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    color: var(--marine);
+}
+
+article {
+    box-shadow: 0 4px 10px var(--steel);
 }
 
 button:active {
