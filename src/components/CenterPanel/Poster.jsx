@@ -1,4 +1,6 @@
 import { IoImageOutline } from "react-icons/io5";
+import { AiOutlineNotification } from "react-icons/ai";
+import { MdOutlineTipsAndUpdates } from "react-icons/md";
 
 function Poster() {
   return (
@@ -15,17 +17,17 @@ function Poster() {
 
         <div className="flex justify-center items-center gap-4">
           <button
-            className="bg-choco text-sunny px-3 py-1 rounded-md"
+            className="bg-choco flex justify-center items-center gap-2 text-sunny px-3 py-1 rounded-md"
             type="button"
           >
-            Post
+            Post <MdOutlineTipsAndUpdates className="hidden lg:flex text-2xl" />
           </button>
 
           <button
-            className="bg-choco text-sunny px-3 py-1 rounded-md"
+            className="bg-choco flex justify-center items-center gap-2 text-sunny px-3 py-1 rounded-md"
             type="button"
           >
-            Alert
+            Alert <AiOutlineNotification className="hidden lg:flex text-2xl" />
           </button>
         </div>
       </div>
