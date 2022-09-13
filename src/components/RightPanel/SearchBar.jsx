@@ -2,7 +2,7 @@ import { IoMdSearch } from "react-icons/io";
 
 function SearchBar() {
   return (
-    <article className="h-14 w-full flex justify-center items-center p-2 rounded-lg relative">
+    <article className="bg-cream h-14 w-full flex justify-center items-center p-2 rounded-lg relative">
       <input
         className="w-full p-2 pl-8 rounded-md"
         type="text"
