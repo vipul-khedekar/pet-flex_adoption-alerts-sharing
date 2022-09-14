@@ -3,7 +3,7 @@ import Interactions from "./Interactions";
 
 function Post() {
   return (
-    <div className="flex flex-col gap-2 border-separate">
+    <div className="flex flex-col gap-2 mb-5">
       <div className="flex justify-start items-center gap-2">
         <img
           className="h-10 w-10 rounded-full object-cover"
