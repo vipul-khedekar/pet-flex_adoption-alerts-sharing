@@ -13,7 +13,7 @@ function Poster() {
       ></textarea>
 
       <div className="flex justify-between items-center gap-20">
-        <IoImageOutline className="text-2xl justify-start scale-100 ease-in duration-150 cursor-pointer hover:scale-110" />
+        <IoImageOutline className="text-2xl justify-start cursor-pointer active:translate-y-1" />
 
         <div className="flex justify-center items-center gap-4">
           <button
