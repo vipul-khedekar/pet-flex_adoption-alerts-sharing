@@ -1,3 +1,6 @@
+import { IoLogoGoogle } from "react-icons/io";
+import { IoPlayOutline } from "react-icons/io5";
+
 import Background from "../images/background.jpg";
 
 function Login() {
@@ -5,17 +8,18 @@ function Login() {
     <main className="h-[100vh] w-[100vw] relative">
       <section className="flex flex-col gap-4 absolute top-20 right-14 lg:top-28 lg:right-72 border-[2px] border-sea rounded-lg p-8">
         <button
-          className="bg-choco px-3 py-1 rounded-md text-lg text-sunny"
+          className="bg-choco flex justify-center items-center gap-2 px-3 py-1 rounded-md text-lg text-sunny"
           type="button"
         >
-          Continue without login
+          <IoPlayOutline className="text-xl" /> Continue without login (as
+          Guest)
         </button>
 
         <button
-          className="bg-choco px-3 py-1 rounded-md text-lg text-sunny"
+          className="bg-choco flex justify-center items-center gap-2 px-3 py-1 rounded-md text-lg text-sunny"
           type="button"
         >
-          Login with Google
+          <IoLogoGoogle /> Login with Google
         </button>
 
         <form className="flex flex-col justify-center items-center gap-4">
