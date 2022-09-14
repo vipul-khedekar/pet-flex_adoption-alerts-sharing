@@ -25,7 +25,7 @@ function Signup() {
               className="text-sm text-choco font-bold ml-2"
               htmlFor="email"
             >
-              Username:
+              Username
             </label>
 
             <input
@@ -40,7 +40,7 @@ function Signup() {
               className="text-sm text-choco ml-2 font-bold"
               htmlFor="password"
             >
-              Password:
+              Password
             </label>
 
             <input
@@ -55,7 +55,7 @@ function Signup() {
               className="text-sm text-choco ml-2 font-bold"
               htmlFor="password"
             >
-              Confirm Password:
+              Confirm Password
             </label>
 
             <input
