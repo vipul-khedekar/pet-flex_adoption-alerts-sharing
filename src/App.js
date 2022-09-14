@@ -1,10 +1,12 @@
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Error from "./pages/Error";
 
 function App() {
   return (
-    <Signup />
+    <Error />
+    // <Signup />
     // <Login />
     // <Home />
   );
