@@ -1,4 +1,5 @@
 import DefaultProfilePic from "../images/profile-picture.jpg";
+import Interactions from "./Interactions";
 
 function Post() {
   return (
@@ -28,6 +29,8 @@ function Post() {
           alt="content-pic"
         />
       </div>
+
+      <Interactions />
 
       <hr className="border-[0.5px] border-choco" />
     </div>
