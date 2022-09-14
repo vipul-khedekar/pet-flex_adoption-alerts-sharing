@@ -2,7 +2,9 @@ import PetPic from "../images/profile-picture.jpg";
 
 function PetCard() {
   return (
-    <div className="h-72 w-60 flex flex-col gap-2 border border-choco p-2 rounded-lg">
+    <div className="h-80 w-60 flex flex-col gap-2 border border-choco p-2 rounded-lg">
+      <p className="text-center font-bold">Pet Name</p>
+
       <img
         className="h-64 w-56 rounded-lg object-cover"
         src={PetPic}

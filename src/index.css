@@ -31,7 +31,7 @@ article {
 }
 
 button:active {
-    transform: translate(0, 5px);
+    transform: translate(0, 3px);
 }
 
 /* Mozilla - remove number input arrows */
