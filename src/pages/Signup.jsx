@@ -1,11 +1,48 @@
-import { useRef } from "react";
+import { useState } from "react";
 
 import Background from "../images/background.jpg";
 
 function Signup() {
-  const emailRef = useRef();
-  const passwordRef = useRef();
-  const confirmPasswordRef = useRef();
+  const [email, setEmail] = useState(``);
+  const [password, setPassword] = useState(``);
+  const [confirmPassword, setConfirmPassword] = useState(``);
+
+  function handleSignUp(e) {
+    e.preventDefault();
+
+    if (email === `` || !email.includes(`@`) || !email.includes(`.com`)) {
+      alert(`Enter a valid email.`);
+      return;
+    }
+
+    if (
+      password === `` ||
+      password.length < 8 ||
+      password.length > 20 ||
+      confirmPassword === `` ||
+      confirmPassword.length < 8 ||
+      confirmPassword.length > 20
+    ) {
+      alert(
+        `Passwords should not be less than 8 or more than 20 characters long.`
+      );
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      alert(`Passwords do not match.`);
+      return;
+    }
+
+    const user = {
+      email: email,
+      password: password,
+    };
+
+    setEmail(``);
+    setPassword(``);
+    setConfirmPassword(``);
+  }
 
   return (
     <main className="h-[100vh] w-[100vw] relative">
@@ -20,10 +57,11 @@ function Signup() {
             </label>
 
             <input
+              onChange={(e) => setEmail(e.target.value)}
               className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
               id="email"
               type="email"
-              ref={emailRef}
+              value={email}
               required
             />
           </div>
@@ -37,10 +75,11 @@ function Signup() {
             </label>
 
             <input
+              onChange={(e) => setPassword(e.target.value)}
               className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
               id="password"
               type="password"
-              ref={passwordRef}
+              value={password}
               required
             />
           </div>
@@ -54,15 +93,17 @@ function Signup() {
             </label>
 
             <input
+              onChange={(e) => setConfirmPassword(e.target.value)}
               className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
               id="password"
               type="password"
-              ref={confirmPasswordRef}
+              value={confirmPassword}
               required
             />
           </div>
 
           <button
+            onClick={(e) => handleSignUp(e)}
             className="bg-choco px-3 py-1 rounded-md text-lg text-sunny"
             type="submit"
           >
