@@ -2,9 +2,9 @@ const initialState = {
   allUsers: [
     {
       id: 1,
-      name: `Mr. Pet Lover`,
-      username: `petlover333`,
       email: `petlover@gmail.com`,
+      username: `petlover333`,
+      tag: 333,
       password: `petlover333`,
     },
   ],

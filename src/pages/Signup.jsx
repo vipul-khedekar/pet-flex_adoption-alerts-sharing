@@ -11,6 +11,7 @@ function Signup() {
   const dispatch = useDispatch();
 
   const [email, setEmail] = useState(``);
+  const [username, setUsername] = useState(``);
   const [password, setPassword] = useState(``);
   const [confirmPassword, setConfirmPassword] = useState(``);
   const [user, setUser] = useState(allUsers);
@@ -22,6 +23,11 @@ function Signup() {
 
     if (email === `` || !email.includes(`@`) || !email.includes(`.com`)) {
       alert(`Enter a valid email with @ and .com domain`);
+      return;
+    }
+
+    if (username.length < 3 || username.length > 14) {
+      alert(`Username cannot be less than 3 and more than 14 characters long.`);
       return;
     }
 
@@ -49,11 +55,18 @@ function Signup() {
       return;
     }
 
+    if (allUsers.find((item) => item.username === username)) {
+      alert(`Username already exists.`);
+      return;
+    }
+
     setIsLoading(true);
 
     const newUser = {
       id: Date.now(),
       email: email,
+      username: username,
+      tag: Date.now(),
       password: password,
     };
     allUsers.unshift(newUser);
@@ -92,6 +105,24 @@ function Signup() {
               id="email"
               type="email"
               value={email}
+              required
+            />
+          </div>
+
+          <div className="flex flex-col">
+            <label
+              className="text-sm text-choco font-bold ml-2"
+              htmlFor="username"
+            >
+              UserName
+            </label>
+
+            <input
+              onChange={(e) => setUsername(e.target.value)}
+              className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
+              id="username"
+              type="text"
+              value={username}
               required
             />
           </div>
