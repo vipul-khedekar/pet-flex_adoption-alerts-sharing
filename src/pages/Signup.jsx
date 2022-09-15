@@ -1,6 +1,12 @@
+import { useRef } from "react";
+
 import Background from "../images/background.jpg";
 
 function Signup() {
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const confirmPasswordRef = useRef();
+
   return (
     <main className="h-[100vh] w-[100vw] relative">
       <section className="flex flex-col gap-4 absolute top-20 right-14 lg:top-28 lg:right-72 border-[2px] border-sea rounded-lg p-8">
@@ -17,21 +23,8 @@ function Signup() {
               className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
               id="email"
               type="email"
-            />
-          </div>
-
-          <div className="flex flex-col">
-            <label
-              className="text-sm text-choco font-bold ml-2"
-              htmlFor="email"
-            >
-              Username
-            </label>
-
-            <input
-              className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
-              id="email"
-              type="email"
+              ref={emailRef}
+              required
             />
           </div>
 
@@ -47,6 +40,8 @@ function Signup() {
               className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
               id="password"
               type="password"
+              ref={passwordRef}
+              required
             />
           </div>
 
@@ -62,6 +57,8 @@ function Signup() {
               className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
               id="password"
               type="password"
+              ref={confirmPasswordRef}
+              required
             />
           </div>
 
