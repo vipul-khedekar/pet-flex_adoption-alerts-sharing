@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 import Background from "../images/background.jpg";
 import Loader from "../components/Loader";
@@ -14,6 +15,7 @@ function Signup() {
   const [confirmPassword, setConfirmPassword] = useState(``);
   const [user, setUser] = useState(allUsers);
   const [isLoading, setIsLoading] = useState(false);
+  const [message, setMessage] = useState(``);
 
   function handleSignUp(e) {
     e.preventDefault();
@@ -52,6 +54,7 @@ function Signup() {
     allUsers.unshift(newUser);
     setUser(user);
     dispatch({ type: `NEW_USER_SIGN_UP`, allUsers: user });
+    localStorage.setItem(`allUsers`, JSON.stringify(allUsers));
 
     setEmail(``);
     setPassword(``);
@@ -59,6 +62,10 @@ function Signup() {
 
     setTimeout(() => {
       setIsLoading(false);
+      setMessage(`Account created. Go to login page.`);
+      setTimeout(() => {
+        setMessage(``);
+      }, 3000);
     }, 1500);
   }
 
@@ -131,7 +138,16 @@ function Signup() {
               Sign up
             </button>
           )}
+
+          {message && <p className="text-sm italic text-center">{message}</p>}
         </form>
+
+        <Link
+          className="bg-choco px-3 py-1 mt-4 rounded-md text-sunny text-center"
+          to={"/login"}
+        >
+          Go to login page
+        </Link>
       </section>
 
       <img
