@@ -1,4 +1,5 @@
 import { IoPlayOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 import Background from "../images/background.jpg";
 
@@ -61,12 +62,13 @@ function Login() {
           <p>Dummy Password: petlover333</p>
         </div>
 
-        <button
-          className="bg-choco px-3 py-1 rounded-md text-lg text-sunny"
+        <Link
+          to={"/signup"}
+          className="bg-choco px-3 py-1 rounded-md text-center text-lg text-sunny"
           typeof="button"
         >
           I want to sign up
-        </button>
+        </Link>
       </section>
 
       <img
