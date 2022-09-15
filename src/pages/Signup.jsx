@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import Background from "../images/background.jpg";
+import Loader from "../components/Loader";
 
 function Signup() {
   const { allUsers } = useSelector((state) => state.allUsers);
@@ -12,6 +13,7 @@ function Signup() {
   const [password, setPassword] = useState(``);
   const [confirmPassword, setConfirmPassword] = useState(``);
   const [user, setUser] = useState(allUsers);
+  const [isLoading, setIsLoading] = useState(false);
 
   function handleSignUp(e) {
     e.preventDefault();
@@ -40,6 +42,8 @@ function Signup() {
       return;
     }
 
+    setIsLoading(true);
+
     const newUser = {
       id: Date.now(),
       email: email,
@@ -52,7 +56,10 @@ function Signup() {
     setEmail(``);
     setPassword(``);
     setConfirmPassword(``);
-    console.log(allUsers);
+
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
   }
 
   return (
@@ -113,13 +120,17 @@ function Signup() {
             />
           </div>
 
-          <button
-            onClick={(e) => handleSignUp(e)}
-            className="bg-choco px-3 py-1 rounded-md text-lg text-sunny"
-            type="submit"
-          >
-            Sign up
-          </button>
+          {isLoading ? (
+            <Loader />
+          ) : (
+            <button
+              onClick={(e) => handleSignUp(e)}
+              className="bg-choco px-3 py-1 rounded-md text-lg text-sunny"
+              type="submit"
+            >
+              Sign up
+            </button>
+          )}
         </form>
       </section>
 
