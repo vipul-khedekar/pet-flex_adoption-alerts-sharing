@@ -1,9 +1,34 @@
 import { IoPlayOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 import Background from "../images/background.jpg";
 
 function Login() {
+  const { allUsers } = useSelector((state) => state.allUsers);
+
+  const dispatch = useDispatch();
+
+  const [email, setEmail] = useState(``);
+  const [password, setPassword] = useState(``);
+
+  function handleLogin(e) {
+    e.preventDefault();
+
+    if (
+      allUsers.find((user) => user.email === email) &&
+      allUsers.find((user) => user.password === password)
+    ) {
+      const currentUser = allUsers.find((user) => {
+        return user.email === email;
+      });
+
+      dispatch({ type: `UPDATE_CURRENT_USER`, currentUser: currentUser });
+      localStorage.setItem(`currentUser`, JSON.stringify(currentUser));
+    }
+  }
+
   return (
     <main className="h-[100vh] w-[100vw] relative">
       <section className="flex flex-col gap-4 absolute top-20 right-14 lg:top-28 lg:right-72 border-[2px] border-sea rounded-lg p-8">
@@ -21,12 +46,14 @@ function Login() {
               className="text-sm text-choco font-bold ml-2"
               htmlFor="email"
             >
-              E-mail/Username
+              E-mail
             </label>
 
             <input
+              onChange={(e) => setEmail(e.target.value)}
               className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
               id="email"
+              value={email}
               type="email"
             />
           </div>
@@ -40,13 +67,16 @@ function Login() {
             </label>
 
             <input
+              onChange={(e) => setPassword(e.target.value)}
               className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
               id="password"
+              value={password}
               type="password"
             />
           </div>
 
           <button
+            onClick={(e) => handleLogin(e)}
             className="bg-choco px-3 py-1 rounded-md text-lg text-sunny"
             type="submit"
           >
