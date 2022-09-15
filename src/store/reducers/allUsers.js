@@ -1,5 +1,13 @@
 const initialState = {
-  allUsers: [],
+  allUsers: [
+    {
+      id: 1,
+      name: `Mr. Pet Lover`,
+      username: `petlover333`,
+      email: `petlover@gmail.com`,
+      password: `petlover333`,
+    },
+  ],
 };
 
 export default function reducer(state = initialState, action) {
