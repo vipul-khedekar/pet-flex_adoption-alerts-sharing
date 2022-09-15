@@ -1,17 +1,23 @@
 import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 import Background from "../images/background.jpg";
 
 function Signup() {
+  const { allUsers } = useSelector((state) => state.allUsers);
+
+  const dispatch = useDispatch();
+
   const [email, setEmail] = useState(``);
   const [password, setPassword] = useState(``);
   const [confirmPassword, setConfirmPassword] = useState(``);
+  const [user, setUser] = useState(allUsers);
 
   function handleSignUp(e) {
     e.preventDefault();
 
     if (email === `` || !email.includes(`@`) || !email.includes(`.com`)) {
-      alert(`Enter a valid email.`);
+      alert(`Enter a valid email with @ and .com domain`);
       return;
     }
 
@@ -34,14 +40,19 @@ function Signup() {
       return;
     }
 
-    const user = {
+    const newUser = {
+      id: Date.now(),
       email: email,
       password: password,
     };
+    allUsers.unshift(newUser);
+    setUser(user);
+    dispatch({ type: `NEW_USER_SIGN_UP`, allUsers: user });
 
     setEmail(``);
     setPassword(``);
     setConfirmPassword(``);
+    console.log(allUsers);
   }
 
   return (
