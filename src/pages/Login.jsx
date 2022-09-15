@@ -107,11 +107,17 @@ function Login() {
         </form>
 
         <div className="mt-4">
-          <p>Dummy E-mail: petlover@gmail.com</p>
+          <p className="text-xs">
+            Dummy E-mail:{" "}
+            <span className="text-base tracking-widest">
+              petlover@gmail.com
+            </span>
+          </p>
 
-          <p>Dummy Username: petlover333</p>
-
-          <p>Dummy Password: petlover333</p>
+          <p className="text-xs">
+            Dummy Password:{" "}
+            <span className="text-base tracking-widest">petlover333</span>
+          </p>
         </div>
 
         <Link
