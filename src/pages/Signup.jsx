@@ -44,6 +44,11 @@ function Signup() {
       return;
     }
 
+    if (allUsers.find((item) => item.email === email)) {
+      alert(`Email already exists.`);
+      return;
+    }
+
     setIsLoading(true);
 
     const newUser = {
