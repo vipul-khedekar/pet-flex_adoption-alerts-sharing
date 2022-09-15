@@ -12,6 +12,7 @@ function Login() {
 
   const [email, setEmail] = useState(``);
   const [password, setPassword] = useState(``);
+  const [isUserActive, setIsUserActive] = useState(false);
 
   function handleLogin(e) {
     e.preventDefault();
@@ -24,7 +25,10 @@ function Login() {
         return user.email === email;
       });
 
-      dispatch({ type: `UPDATE_CURRENT_USER`, currentUser: currentUser });
+      setIsUserActive(true);
+
+      dispatch({ type: `TOGGLE_ACTIVE`, isUserActive: isUserActive });
+      // dispatch({ type: `UPDATE_CURRENT_USER`, currentUser: currentUser });
       localStorage.setItem(`currentUser`, JSON.stringify(currentUser));
     }
   }
