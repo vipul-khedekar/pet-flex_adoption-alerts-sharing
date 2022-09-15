@@ -41,6 +41,7 @@
     "@mui/material": "^5.10.4",
     "@mui/x-data-grid": "^5.17.2",
     "autoprefixer": "^10.4.8",
+    "firebase": "^9.9.4",
     "postcss": "^8.4.16",
     "react-icons": "^4.4.0",
     "react-redux": "^8.0.2",
