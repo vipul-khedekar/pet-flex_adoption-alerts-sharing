@@ -1,4 +1,3 @@
-import { IoLogoGoogle } from "react-icons/io";
 import { IoPlayOutline } from "react-icons/io5";
 
 import Background from "../images/background.jpg";
@@ -13,13 +12,6 @@ function Login() {
         >
           <IoPlayOutline className="text-xl" /> Continue without login (as
           Guest)
-        </button>
-
-        <button
-          className="bg-choco flex justify-center items-center gap-2 px-3 py-1 rounded-md text-lg text-sunny"
-          type="button"
-        >
-          <IoLogoGoogle /> Login with Google
         </button>
 
         <form className="flex flex-col justify-center items-center gap-4">
