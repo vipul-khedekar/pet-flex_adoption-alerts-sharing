@@ -17,6 +17,16 @@ function Login() {
   function handleLogin(e) {
     e.preventDefault();
 
+    if (email === `` || !email.includes(`@`) || !email.includes(`.com`)) {
+      alert(`Enter a valid email.`);
+      return;
+    }
+
+    if (password === ``) {
+      alert(`Password cannot be empty.`);
+      return;
+    }
+
     if (
       allUsers.find((user) => user.email === email) &&
       allUsers.find((user) => user.password === password)
@@ -30,6 +40,14 @@ function Login() {
       dispatch({ type: `TOGGLE_ACTIVE`, isUserActive: isUserActive });
       // dispatch({ type: `UPDATE_CURRENT_USER`, currentUser: currentUser });
       localStorage.setItem(`currentUser`, JSON.stringify(currentUser));
+
+      setEmail(``);
+      setPassword(``);
+    } else {
+      alert(`Email or password is incorrect.`);
+      setEmail(``);
+      setPassword(``);
+      return;
     }
   }
 
