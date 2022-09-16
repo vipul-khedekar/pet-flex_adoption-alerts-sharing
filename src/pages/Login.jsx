@@ -1,18 +1,15 @@
 import { IoPlayOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 import Background from "../images/background.jpg";
 
 function Login() {
-  const { allUsers } = useSelector((state) => state.allUsers);
-
-  const dispatch = useDispatch();
+  const allUsers = useSelector((state) => state.allUsers);
 
   const [email, setEmail] = useState(``);
   const [password, setPassword] = useState(``);
-  const [isUserActive, setIsUserActive] = useState(false);
 
   function handleLogin(e) {
     e.preventDefault();
@@ -34,13 +31,9 @@ function Login() {
       const currentUser = allUsers.find((user) => {
         return user.email === email;
       });
-      console.log(currentUser);
 
-      setIsUserActive(true);
-
-      dispatch({ type: `TOGGLE_LOGIN`, isUserLogged: isUserActive });
-
-      // localStorage.setItem(`currentUser`, JSON.stringify(loggedUser));
+      localStorage.setItem(`currentUser`, JSON.stringify(currentUser));
+      localStorage.setItem(`userActive`, JSON.stringify(true));
 
       setEmail(``);
       setPassword(``);
@@ -98,14 +91,13 @@ function Login() {
             />
           </div>
 
-          <Link
-            to={"/"}
+          <button
             onClick={(e) => handleLogin(e)}
             className="bg-choco px-3 py-1 rounded-md text-lg text-sunny"
             type="submit"
           >
             Login
-          </Link>
+          </button>
         </form>
 
         <div className="mt-4">
