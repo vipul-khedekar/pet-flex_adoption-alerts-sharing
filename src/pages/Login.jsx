@@ -34,12 +34,13 @@ function Login() {
       const currentUser = allUsers.find((user) => {
         return user.email === email;
       });
+      console.log(currentUser);
 
       setIsUserActive(true);
 
-      dispatch({ type: `TOGGLE_ACTIVE`, isUserActive: isUserActive });
-      // dispatch({ type: `UPDATE_CURRENT_USER`, currentUser: currentUser });
-      localStorage.setItem(`currentUser`, JSON.stringify(currentUser));
+      dispatch({ type: `TOGGLE_LOGIN`, isUserLogged: isUserActive });
+
+      // localStorage.setItem(`currentUser`, JSON.stringify(loggedUser));
 
       setEmail(``);
       setPassword(``);
@@ -97,13 +98,14 @@ function Login() {
             />
           </div>
 
-          <button
+          <Link
+            to={"/"}
             onClick={(e) => handleLogin(e)}
             className="bg-choco px-3 py-1 rounded-md text-lg text-sunny"
             type="submit"
           >
             Login
-          </button>
+          </Link>
         </form>
 
         <div className="mt-4">

@@ -17,6 +17,7 @@ export default function reducer(state = initialState, action) {
         ...state,
         allUsers: action.allUsers,
       };
+
     default:
       return state;
   }

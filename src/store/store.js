@@ -1,13 +1,5 @@
-import { createStore, combineReducers } from "redux";
+import { createStore } from "redux";
 
-import allUsers from "./reducers/allUsers";
-import currentUser from "./reducers/currentUser";
-import isUserActive from "./reducers/isUserActive";
+import reducer from "./reducers/reducer";
 
-const combinedReducer = combineReducers({
-  allUsers,
-  currentUser,
-  isUserActive,
-});
-
-export const store = createStore(combinedReducer);
+export const store = createStore(reducer);
