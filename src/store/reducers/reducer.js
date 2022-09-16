@@ -15,6 +15,8 @@ const initialState = {
       password: `otherpet`,
     },
   ],
+
+  isUserActive: false,
 };
 
 export function reducer(state = initialState, action) {
@@ -23,6 +25,12 @@ export function reducer(state = initialState, action) {
       return {
         ...state,
         allUsers: action.allUsers,
+      };
+
+    case `TOGGLE_ACTIVE`:
+      return {
+        ...state,
+        isUserActive: action.isUserActive,
       };
 
     default:

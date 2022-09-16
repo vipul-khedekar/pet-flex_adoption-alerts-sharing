@@ -1,12 +1,14 @@
 import { IoPlayOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 import Background from "../images/background.jpg";
 
 function Login() {
   const allUsers = useSelector((state) => state.allUsers);
+
+  const dispatch = useDispatch();
 
   const [email, setEmail] = useState(``);
   const [password, setPassword] = useState(``);
@@ -32,6 +34,8 @@ function Login() {
         return user.email === email;
       });
 
+      dispatch({ type: `TOGGLE_ACTIVE`, isUserActive: true });
+
       localStorage.setItem(`currentUser`, JSON.stringify(currentUser));
       localStorage.setItem(`userActive`, JSON.stringify(true));
 
@@ -45,6 +49,8 @@ function Login() {
     }
   }
 
+  const isUserActive = useSelector((state) => state.isUserActive);
+  console.log(isUserActive);
   return (
     <main className="h-[100vh] w-[100vw] relative">
       <section className="flex flex-col gap-4 absolute top-20 right-14 lg:top-28 lg:right-72 border-[2px] border-sea rounded-lg p-8">
