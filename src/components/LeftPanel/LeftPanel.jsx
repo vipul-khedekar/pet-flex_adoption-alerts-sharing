@@ -1,6 +1,7 @@
 import Logo from "./Logo";
 import Profile from "./Profile";
 import Options from "./Options";
+import Poster from "./Poster";
 
 function LeftPanel() {
   return (
@@ -8,6 +9,8 @@ function LeftPanel() {
       <Logo />
 
       <Profile />
+
+      <Poster />
 
       <Options />
     </section>
