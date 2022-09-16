@@ -1,7 +1,14 @@
 import Pages from "./pages/Pages";
+import PostUpdatePopup from "./components/PostUpdatePopup";
 
 function App() {
-  return <Pages />;
+  return (
+    <div>
+      <PostUpdatePopup />
+
+      <Pages />
+    </div>
+  );
 }
 
 export default App;
