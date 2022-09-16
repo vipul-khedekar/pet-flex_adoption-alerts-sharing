@@ -4,7 +4,9 @@ import Home from "./Home";
 import Login from "./Login";
 
 function Landing() {
-  return <>landingg</>;
+  const isUserActive = useSelector((state) => state.isUserActive);
+
+  return <>{isUserActive ? <Home /> : <Login />}</>;
 }
 
 export default Landing;
