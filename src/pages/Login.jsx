@@ -49,8 +49,6 @@ function Login() {
     }
   }
 
-  const isUserActive = useSelector((state) => state.isUserActive);
-  console.log(isUserActive);
   return (
     <main className="h-[100vh] w-[100vw] relative">
       <section className="flex flex-col gap-4 absolute top-20 right-14 lg:top-28 lg:right-72 border-[2px] border-sea rounded-lg p-8">
