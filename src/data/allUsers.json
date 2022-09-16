@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "email": "ed@gmail.com",
+        "password": "welch123",
+        "tag": "welch091",
+        "username": "Ed Welch"
+    },
+    {
+        "id": 2,
+        "email": "angela@gmail.com",
+        "password": "jensen123",
+        "tag": "ajensen324",
+        "username": "Angela Jensen"
+    },{
+        "id": 3,
+        "email": "pansy@gmail.com",
+        "password": "mccarthy123",
+        "tag": "mccarthy749",
+        "username": "Pansy Mccarthy"
+    },{
+        "id": 4,
+        "email": "sabrina@gmail.com",
+        "password": "fraley123",
+        "tag": "fraley623",
+        "username": "Sabrina Fraley"
+    },{
+        "id": 5,
+        "email": "rufus@gmail.com",
+        "password": "mckinney123",
+        "tag": "mckinney742",
+        "username": "Rufus Mckinney"
+    },{
+        "id": 6,
+        "email": "dudley@gmail.com",
+        "password": "robinett123",
+        "tag": "robinett124",
+        "username": "Dudley Robinett"
+    },{
+        "id": 7,
+        "email": "martin@gmail.com",
+        "password": "jenning123",
+        "tag": "jenning982",
+        "username": "Martin Jenning"
+    },{
+        "id": 8,
+        "email": "belle@gmail.com",
+        "password": "schwartz123",
+        "tag": "schwartz021",
+        "username": "Belle Schwartz"
+    },{
+        "id": 9,
+        "email": "cyril@gmail.com",
+        "password": "stokes123",
+        "tag": "stokes000",
+        "username": "Cyril Stokes"
+    },{
+        "id": 10,
+        "email": "ella@gmail.com",
+        "password": "vega1234",
+        "tag": "vega763",
+        "username": "Ella Vega"
+    },{
+        "id": 11,
+        "email": "joe@gmail.com",
+        "password": "mama1234",
+        "tag": "joemama",
+        "username": "Joe Mama"
+    },{
+        "id": 12,
+        "email": "petlover@gmail.com",
+        "password": "petlover333",
+        "tag": "petlover333",
+        "username": "Mr. Pet Lover"
+    }
+]

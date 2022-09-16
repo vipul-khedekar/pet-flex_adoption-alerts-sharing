@@ -1,20 +1,7 @@
+import allUsers from "../../data/allUsers.json";
+
 const initialState = {
-  allUsers: [
-    {
-      id: 1,
-      email: `petlover@gmail.com`,
-      username: `petlover333`,
-      tag: 333,
-      password: `petlover333`,
-    },
-    {
-      id: 2,
-      email: `otherpet@gmail.com`,
-      username: `otherpet`,
-      tag: 123,
-      password: `otherpet`,
-    },
-  ],
+  allUsers: allUsers,
 
   isUserActive: false,
 };
