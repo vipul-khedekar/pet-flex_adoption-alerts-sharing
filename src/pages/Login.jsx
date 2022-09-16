@@ -49,10 +49,27 @@ function Login() {
     }
   }
 
+  function handleGuestLogin() {
+    const uniqueNo = Date.now();
+
+    const currentUser = {
+      id: uniqueNo,
+      email: `guest@guest.com`,
+      username: `Guest${uniqueNo.toString().substr(7)}`,
+      tag: uniqueNo,
+    };
+
+    dispatch({ type: `TOGGLE_ACTIVE`, isUserActive: true });
+
+    localStorage.setItem(`currentUser`, JSON.stringify(currentUser));
+    localStorage.setItem(`userActive`, JSON.stringify(true));
+  }
+
   return (
     <main className="h-[100vh] w-[100vw] relative">
       <section className="flex flex-col gap-4 absolute top-20 right-14 lg:top-28 lg:right-72 border-[2px] border-sea rounded-lg p-8">
         <button
+          onClick={() => handleGuestLogin()}
           className="bg-choco flex justify-center items-center gap-2 px-3 py-1 rounded-md text-lg text-sunny"
           type="button"
         >
