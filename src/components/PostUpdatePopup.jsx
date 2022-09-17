@@ -2,7 +2,7 @@ import { IoClose } from "react-icons/io5";
 
 function PostUpdatePopup() {
   return (
-    <div className="bg-sea h-72 w-[80vw] lg:w-[50vw] flex flex-col gap-4 p-6 rounded-2xl absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 modal-shadow">
+    <aside className="bg-sea h-72 w-[80vw] lg:w-[50vw] flex flex-col gap-4 p-6 rounded-2xl absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 modal-shadow">
       <div className="flex justify-between items-center">
         <p className="font-bold">Post an update!</p>
 
@@ -27,7 +27,7 @@ function PostUpdatePopup() {
       >
         Post
       </button>
-    </div>
+    </aside>
   );
 }
 
