@@ -7,7 +7,6 @@ import Background from "../images/background.jpg";
 
 function Login() {
   const allUsers = useSelector((state) => state.allUsers);
-
   const dispatch = useDispatch();
 
   const [email, setEmail] = useState(``);
@@ -35,7 +34,6 @@ function Login() {
       });
 
       dispatch({ type: `TOGGLE_ACTIVE`, isUserActive: true });
-
       localStorage.setItem(`currentUser`, JSON.stringify(currentUser));
       localStorage.setItem(`userActive`, JSON.stringify(true));
 
@@ -60,7 +58,6 @@ function Login() {
     };
 
     dispatch({ type: `TOGGLE_ACTIVE`, isUserActive: true });
-
     localStorage.setItem(`currentUser`, JSON.stringify(currentUser));
     localStorage.setItem(`userActive`, JSON.stringify(true));
   }

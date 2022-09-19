@@ -5,7 +5,7 @@ import CreateAlertPopup from "./components/CreateAlertPopup";
 function App() {
   return (
     <div>
-      <CreateAlertPopup />
+      {/* <CreateAlertPopup /> */}
 
       {/* <PostUpdatePopup /> */}
 
