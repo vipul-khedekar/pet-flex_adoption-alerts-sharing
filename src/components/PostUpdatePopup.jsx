@@ -1,4 +1,5 @@
 import { IoClose } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function PostUpdatePopup() {
   return (
@@ -6,7 +7,9 @@ function PostUpdatePopup() {
       <div className="flex justify-between items-center">
         <p className="font-bold">Post an update!</p>
 
-        <IoClose className="bg-marine rounded-md text-2xl text-sea active:translate-y-1" />
+        <Link to={"/"}>
+          <IoClose className="bg-marine rounded-md text-2xl text-sea active:translate-y-1" />
+        </Link>
       </div>
 
       <textarea
@@ -21,12 +24,14 @@ function PostUpdatePopup() {
         required
       />
 
-      <button
-        className="h-10 w-40 bg-marine rounded-md self-end text-lg text-sea"
-        type="button"
-      >
-        Post
-      </button>
+      <Link to={"/"} className="self-end">
+        <button
+          className="h-10 w-40 bg-marine rounded-md text-lg text-sea"
+          type="button"
+        >
+          Post
+        </button>
+      </Link>
     </aside>
   );
 }

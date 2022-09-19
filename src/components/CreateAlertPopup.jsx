@@ -1,4 +1,5 @@
 import { IoClose } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function CreateAlertPopup() {
   return (
@@ -6,7 +7,9 @@ function CreateAlertPopup() {
       <div className="flex justify-between items-center">
         <p className="font-bold">Create an adoption alert!</p>
 
-        <IoClose className="bg-marine rounded-md text-2xl text-sea active:translate-y-1" />
+        <Link to={"/"}>
+          <IoClose className="bg-marine rounded-md text-2xl text-sea active:translate-y-1" />
+        </Link>
       </div>
 
       <form className="flex flex-col gap-5 justify-center items-center">
@@ -68,12 +71,14 @@ function CreateAlertPopup() {
           />
         </div>
 
-        <button
-          className="bg-marine h-10 w-40 self-end px-3 py-2 rounded-md text-lg text-sea"
-          type="submit"
-        >
-          Alert
-        </button>
+        <Link to={"/"} className="self-end">
+          <button
+            className="bg-marine h-10 w-40 px-3 py-2 rounded-md text-lg text-sea"
+            type="submit"
+          >
+            Alert
+          </button>
+        </Link>
       </form>
     </aside>
   );
