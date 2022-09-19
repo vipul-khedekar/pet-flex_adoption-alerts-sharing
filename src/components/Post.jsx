@@ -1,7 +1,9 @@
 import DefaultProfilePic from "../images/profile-picture.jpg";
 import Interactions from "./Interactions";
 
-function Post() {
+function Post(props) {
+  const { usernameId, username, tag, body, imageLink, comments } = props.post;
+
   return (
     <div className="flex flex-col gap-2 mb-5">
       <div className="flex justify-start items-center gap-2">
