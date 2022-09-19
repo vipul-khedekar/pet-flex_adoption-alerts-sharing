@@ -11,11 +11,7 @@ function PetCard() {
         alt="pet-pic"
       />
 
-      <div className="flex justify-between items-center gap-4 px-4">
-        <p>Cat</p>
-
-        <p>Breed</p>
-      </div>
+      <p className="text-center">Cat</p>
 
       <div className="flex flex-col gap-2 px-4">
         <button
