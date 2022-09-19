@@ -23,7 +23,7 @@ function Post(props) {
         <p className="self-start ml-2">{body}</p>
 
         <img
-          className="h-52 lg:h-72 w-full rounded-lg object-cover object-center"
+          className="h-52 lg:h-[17rem] w-full rounded-lg object-cover object-center"
           src={mediaLink || DefaultProfilePic}
           alt="content-pic"
         />
