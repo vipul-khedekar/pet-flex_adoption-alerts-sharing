@@ -2,7 +2,8 @@ import DefaultProfilePic from "../images/profile-picture.jpg";
 import Interactions from "./Interactions";
 
 function Post(props) {
-  const { usernameId, username, tag, body, mediaLink, comments } = props.post;
+  const { username, tag, body, mediaLink, comments } = props.post;
+  const { id } = props;
 
   return (
     <div className="flex flex-col gap-2 mb-5">
@@ -29,7 +30,7 @@ function Post(props) {
         />
       </div>
 
-      <Interactions comments={comments} />
+      <Interactions comments={comments} mediaLink={mediaLink} />
 
       <hr className="border-[0.5px] border-choco" />
     </div>
