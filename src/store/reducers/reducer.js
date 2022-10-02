@@ -4,6 +4,8 @@ const initialState = {
   allUsers: AllUsers,
 
   isUserActive: false,
+
+  bookmarks: [],
 };
 
 export function reducer(state = initialState, action) {
@@ -18,6 +20,12 @@ export function reducer(state = initialState, action) {
       return {
         ...state,
         isUserActive: action.isUserActive,
+      };
+
+    case `ADD_BOOKMARK`:
+      return {
+        ...state,
+        bookmarks: action.bookmarks,
       };
 
     default:

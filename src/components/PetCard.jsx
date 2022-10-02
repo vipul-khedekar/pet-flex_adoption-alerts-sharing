@@ -1,7 +1,25 @@
-import PetPic from "../images/profile-picture.jpg";
+import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+
+import AdoptionsList from "../data/adoptionsList.json";
 
 function PetCard(props) {
-  const { petName, petType, location, mediaLink } = props.pet;
+  const { id, petName, petType, location, mediaLink } = props.pet;
+
+  const bookmarks = useSelector((state) => state.bookmarks);
+  const dispatch = useDispatch();
+
+  const [bookmarkList, setBookmarkList] = useState(bookmarks);
+
+  function addBookmark(id) {
+    const newBookmarks = AdoptionsList.find((pet) => {
+      return pet.id === id;
+    });
+    bookmarkList.unshift(newBookmarks);
+    setBookmarkList(bookmarkList);
+
+    dispatch({ type: `ADD_BOOKMARK`, bookmarks: bookmarkList });
+  }
 
   return (
     <div className="h-80 w-60 flex flex-col gap-2 border border-choco p-2 rounded-lg">
@@ -27,6 +45,7 @@ function PetCard(props) {
         </button>
 
         <button
+          onClick={() => addBookmark(id)}
           className="bg-choco px-3 py-1 rounded-md text-sunny"
           type="button"
         >
