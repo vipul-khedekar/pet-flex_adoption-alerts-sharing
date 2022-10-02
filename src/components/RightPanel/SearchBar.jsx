@@ -10,7 +10,7 @@ function SearchBar(props) {
     <article className="bg-cream h-14 w-full flex justify-center items-center p-2 rounded-lg relative">
       <input
         onChange={(e) => setSearchQuery(e.target.value)}
-        className="bg-sea w-full p-2 pl-[2.25rem] pr-[5.25rem] rounded-md outline-none text-marine"
+        className="bg-sea w-full p-2 pl-[3rem] pr-[5.25rem] rounded-md outline-none text-marine"
         value={searchQuery}
         type="text"
         placeholder="Search for pet names or types"
@@ -18,7 +18,7 @@ function SearchBar(props) {
 
       <IoMdSearch
         onClick={() => handleSearch(searchQuery)}
-        className="absolute left-3 z-10 text-2xl"
+        className=" bg-marine absolute p-1 left-3 z-10 rounded-md text-sea text-3xl"
       />
 
       <button
