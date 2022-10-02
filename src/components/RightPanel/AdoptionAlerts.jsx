@@ -1,10 +1,7 @@
-import { useState } from "react";
-
 import PetCard from "../PetCard";
-import AdoptionsList from "../../data/adoptionsList.json";
 
-function AdoptionAlerts() {
-  const [adoptionList, setAdoptionList] = useState(AdoptionsList);
+function AdoptionAlerts(props) {
+  const { adoptionList } = props;
 
   return (
     <article className="bg-cream h-[87vh] w-full flex flex-wrap justify-start gap-6 p-4 rounded-lg overflow-y-scroll">
