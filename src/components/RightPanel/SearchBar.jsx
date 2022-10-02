@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IoMdSearch } from "react-icons/io";
 
 function SearchBar(props) {
-  const { handleSearch } = props;
+  const { handleSearch, showAll } = props;
 
   const [searchQuery, setSearchQuery] = useState(``);
 
@@ -22,6 +22,7 @@ function SearchBar(props) {
       />
 
       <button
+        onClick={() => showAll()}
         className="bg-marine text-sea text-sm px-2 py-1 rounded-md absolute z-10 right-3"
         type="button"
       >

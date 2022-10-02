@@ -21,9 +21,13 @@ function RightPanel() {
     setAdoptionList(searchResult);
   }
 
+  function showAll() {
+    setAdoptionList(AdoptionsList);
+  }
+
   return (
     <section className="flex flex-col flex-[3] justify-start items-center gap-4">
-      <SearchBar handleSearch={handleSearch} />
+      <SearchBar handleSearch={handleSearch} showAll={showAll} />
 
       {adoptionList.length !== 0 ? (
         <AdoptionAlerts adoptionList={adoptionList} />
