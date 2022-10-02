@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "petName": "Simba",
+        "petType": "Dog",
+        "location": "Mumbai",
+        "mediaLink": "https://firebasestorage.googleapis.com/v0/b/pet-flex-social.appspot.com/o/adoptionsMedia%2Fsimba.jpeg?alt=media&token=24822cb5-3ad9-45f4-8def-8ed33ace6d54"
+    },
+    {
+        "id": 2,
+        "petName": "Lucy",
+        "petType": "Cat",
+        "location": "Hyderabad",
+        "mediaLink": "https://firebasestorage.googleapis.com/v0/b/pet-flex-social.appspot.com/o/adoptionsMedia%2Flucy.jpeg?alt=media&token=8816295d-b12d-4dd3-b55d-0d64c9bee285"
+    },
+    {
+        "id": 3,
+        "petName": "Arrow",
+        "petType": "Dog",
+        "location": "Pune",
+        "mediaLink": "https://firebasestorage.googleapis.com/v0/b/pet-flex-social.appspot.com/o/adoptionsMedia%2Farrow.jpeg?alt=media&token=49950efd-8dba-49cf-9114-aa2bf69e5623"
+    },
+    {
+        "id": 4,
+        "petName": "Ballu",
+        "petType": "Bear",
+        "location": "Unknown",
+        "mediaLink": "https://firebasestorage.googleapis.com/v0/b/pet-flex-social.appspot.com/o/adoptionsMedia%2Fballu.jpg?alt=media&token=27ff9392-67d3-45bc-98e0-335538f2534b"
+    },
+    {
+        "id": 5,
+        "petName": "Chicku",
+        "petType": "Chick",
+        "location": "jaipur",
+        "mediaLink": "https://firebasestorage.googleapis.com/v0/b/pet-flex-social.appspot.com/o/adoptionsMedia%2Fchiku.jpg?alt=media&token=4350dc66-02ad-4305-af0a-5b343ec36dd3"
+    }
+]
