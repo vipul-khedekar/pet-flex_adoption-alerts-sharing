@@ -1,7 +1,7 @@
-import allUsers from "../../data/allUsers.json";
+import AllUsers from "../../data/allUsers.json";
 
 const initialState = {
-  allUsers: allUsers,
+  allUsers: AllUsers,
 
   isUserActive: false,
 };
