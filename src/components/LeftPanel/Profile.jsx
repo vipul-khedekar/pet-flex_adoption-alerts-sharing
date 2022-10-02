@@ -15,10 +15,6 @@ function Profile() {
         <p className="text-xl">{user.username}</p>
 
         <p className="text-sm">{`(@${user.tag})`}</p>
-
-        <p className="mt-3 font-bold">Posts: {333}</p>
-
-        <p className="font-bold">Bookmarks: {12}</p>
       </div>
     </article>
   );

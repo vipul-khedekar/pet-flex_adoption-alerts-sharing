@@ -18,7 +18,10 @@ function PetCard(props) {
     bookmarkList.unshift(newBookmarks);
     setBookmarkList(bookmarkList);
 
-    dispatch({ type: `ADD_BOOKMARK`, bookmarks: bookmarkList });
+    dispatch({
+      type: `ADD_BOOKMARK`,
+      bookmarks: bookmarkList,
+    });
   }
 
   return (
