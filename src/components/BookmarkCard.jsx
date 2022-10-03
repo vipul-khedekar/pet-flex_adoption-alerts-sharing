@@ -2,6 +2,7 @@ import { IoRemoveCircleSharp } from "react-icons/io5";
 
 function BookmarkCard(props) {
   const { id, petName, petType, location, mediaLink } = props.bookmarkData;
+  const removeBookmark = props.removeBookmark;
 
   return (
     <article className="flex justify-between items-center pr-4 rounded-md">
@@ -17,7 +18,10 @@ function BookmarkCard(props) {
 
       <p className="w-14">{location}</p>
 
-      <IoRemoveCircleSharp className="text-2xl" />
+      <IoRemoveCircleSharp
+        onClick={() => removeBookmark(id)}
+        className="text-2xl"
+      />
     </article>
   );
 }
