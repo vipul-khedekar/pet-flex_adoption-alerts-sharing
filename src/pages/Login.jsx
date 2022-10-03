@@ -64,6 +64,15 @@ function Login() {
 
   return (
     <main className="h-[100vh] w-[100vw] relative">
+      <section className="md:w-80 lg:w-96 absolute top-14 md:right-2 lg:right-36 text-choco">
+        <p className="mb-2 font-caveatBrush text-8xl">Pet Flex</p>
+
+        <p className="ml-4 text-sm">‣ Search for pets to adoption</p>
+        <p className="ml-4 text-sm">‣ Bookmark the alerts</p>
+        <p className="ml-4 text-sm">‣ Social media for pet owners</p>
+        <p className="ml-4 text-sm">‣ View without login, as guest user</p>
+      </section>
+
       <section className="md:w-80 lg:w-96 flex flex-col gap-4 absolute bottom-28 right-2 lg:bottom-28 lg:right-40 border-[2px] border-choco rounded-lg p-4">
         <button
           onClick={() => handleGuestLogin()}
@@ -117,6 +126,7 @@ function Login() {
             Login
           </button>
         </form>
+
         <div className="mt-4">
           <p className="text-xs">
             Dummy E-mail:{" "}
@@ -130,6 +140,7 @@ function Login() {
             <span className="text-base tracking-widest">petlover333</span>
           </p>
         </div>
+
         <Link
           to={"/signup"}
           className="bg-choco px-3 py-1 rounded-md text-center text-lg text-sunny"
@@ -138,6 +149,7 @@ function Login() {
           I want to sign up
         </Link>
       </section>
+
       <img
         className="h-[100vh] w-[100vw] object-cover"
         src={Background}
