@@ -12,7 +12,7 @@ function Profile() {
       />
 
       <div className="flex flex-col justify-center items-center gap-1 mt-40">
-        <p className="text-xl">{user.username}</p>
+        <p className="text-xl font-bold">{user.username}</p>
 
         <p className="text-sm">{`(@${user.tag})`}</p>
       </div>
