@@ -1,4 +1,5 @@
 import { IoPawSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function Error() {
   return (
@@ -11,12 +12,14 @@ function Error() {
         This page doesn't exists.
       </p>
 
-      <button
-        className="bg-marine px-4 py-2 mt-4 rounded-md text-sea text-xl"
-        type="button"
-      >
-        Return Home
-      </button>
+      <Link to={`/`}>
+        <button
+          className="bg-marine px-4 py-2 mt-4 rounded-md text-sea text-xl"
+          type="button"
+        >
+          Return Home
+        </button>
+      </Link>
 
       <IoPawSharp className="absolute z-10 top-7 right-40 text-7xl text-choco rotate-45" />
 
