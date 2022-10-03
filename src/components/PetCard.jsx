@@ -12,9 +12,18 @@ function PetCard(props) {
   const [bookmarkList, setBookmarkList] = useState(bookmarks);
 
   function addBookmark(id) {
+    if (bookmarkList.length > 0) {
+      for (let i = 0; i < bookmarkList.length; i++) {
+        if (bookmarkList[i].id === id) {
+          return;
+        }
+      }
+    }
+
     const newBookmarks = AdoptionsList.find((pet) => {
       return pet.id === id;
     });
+
     bookmarkList.unshift(newBookmarks);
     setBookmarkList(bookmarkList);
 
