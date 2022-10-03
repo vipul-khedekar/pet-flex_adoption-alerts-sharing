@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import Background from "../images/background.jpg";
+import Background from "../images/background.png";
 
 function Login() {
   const allUsers = useSelector((state) => state.allUsers);
@@ -64,14 +64,14 @@ function Login() {
 
   return (
     <main className="h-[100vh] w-[100vw] relative">
-      <section className="flex flex-col gap-4 absolute top-20 right-14 lg:top-28 lg:right-72 border-[2px] border-sea rounded-lg p-8">
+      <section className="md:w-80 lg:w-96 flex flex-col gap-4 absolute bottom-28 right-2 lg:bottom-28 lg:right-40 border-[2px] border-choco rounded-lg p-4">
         <button
           onClick={() => handleGuestLogin()}
-          className="bg-choco flex justify-center items-center gap-2 px-3 py-1 rounded-md text-lg text-sunny"
+          className="bg-choco flex justify-center items-center gap-2 px-[6px] py-2 rounded-md text-lg text-sunny"
           type="button"
         >
-          <IoPlayOutline className="text-xl" /> Continue without login (as
-          Guest)
+          <IoPlayOutline className="md:hidden text-xl" />
+          Continue without login (as Guest)
         </button>
 
         <form className="flex flex-col justify-center items-center gap-4">
@@ -117,7 +117,6 @@ function Login() {
             Login
           </button>
         </form>
-
         <div className="mt-4">
           <p className="text-xs">
             Dummy E-mail:{" "}
@@ -131,7 +130,6 @@ function Login() {
             <span className="text-base tracking-widest">petlover333</span>
           </p>
         </div>
-
         <Link
           to={"/signup"}
           className="bg-choco px-3 py-1 rounded-md text-center text-lg text-sunny"
@@ -140,7 +138,6 @@ function Login() {
           I want to sign up
         </Link>
       </section>
-
       <img
         className="h-[100vh] w-[100vw] object-cover"
         src={Background}

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
-import Background from "../images/background.jpg";
+import Background from "../images/background.png";
 import Loader from "../components/Loader";
 
 function Signup() {
@@ -89,7 +89,7 @@ function Signup() {
 
   return (
     <main className="h-[100vh] w-[100vw] relative">
-      <section className="flex flex-col gap-4 absolute top-20 right-14 lg:top-28 lg:right-72 border-[2px] border-sea rounded-lg p-8">
+      <section className="md:w-80 lg:w-96 flex flex-col gap-4 absolute bottom-20 right-2 lg:bottom-20 lg:right-40 border-[2px] border-choco rounded-lg p-4">
         <form className="flex flex-col justify-center items-center gap-4">
           <div className="flex flex-col">
             <label
