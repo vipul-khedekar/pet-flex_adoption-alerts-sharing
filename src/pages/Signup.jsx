@@ -180,7 +180,7 @@ function Signup() {
 
         <Link
           className="bg-choco px-3 py-1 mt-4 rounded-md text-sunny text-center"
-          to={"/login"}
+          to={"/"}
         >
           Go to login page
         </Link>
