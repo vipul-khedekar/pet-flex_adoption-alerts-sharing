@@ -6,6 +6,9 @@
     --sunny: #eef4b1;
     --sea: #acd7eb;
     --marine: #00396a;
+
+    --caveatBrush: 'Caveat Brush', cursive;
+    --nunito: 'Nunito', sans-serif;
 }
 
 html, body {
@@ -24,6 +27,7 @@ body {
     align-items: center;
     gap: 2rem;
     color: var(--marine);
+    font-family: var(--nunito);
     /* position: relative; */
 }
 
