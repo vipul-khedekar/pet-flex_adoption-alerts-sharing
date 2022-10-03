@@ -11,6 +11,10 @@ module.exports = {
         sea: "#acd7eb",
         marine: "#00396a",
       },
+      fontFamily: {
+        caveatBrush: ["Caveat Brush, cursive"],
+        nunito: ["Nunito, sans-serif"],
+      },
     },
   },
   plugins: [],
