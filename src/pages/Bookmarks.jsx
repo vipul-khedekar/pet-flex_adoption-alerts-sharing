@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import BookmarkCard from "../components/BookmarkCard";
 
 function Bookmarks() {
   const bookmarkList = useSelector((state) => state.bookmarks);
+  const dispatch = useDispatch();
 
   const [bookmarks, setBookmarks] = useState(bookmarkList);
 
@@ -12,6 +13,8 @@ function Bookmarks() {
       return bookmark.id !== id;
     });
     setBookmarks(filteredList);
+
+    dispatch({ type: `ADD_BOOKMARK`, bookmarks: bookmarks });
   }
 
   return (
