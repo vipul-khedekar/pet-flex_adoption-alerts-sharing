@@ -89,6 +89,15 @@ function Signup() {
 
   return (
     <main className="h-[100vh] w-[100vw] relative">
+      <section className="md:w-80 lg:w-96 absolute top-14 md:right-2 lg:right-36 text-choco">
+        <p className="mb-2 font-caveatBrush text-8xl">Pet Flex</p>
+
+        <p className="ml-4 text-sm">‣ Search for pets to adoption</p>
+        <p className="ml-4 text-sm">‣ Bookmark the alerts</p>
+        <p className="ml-4 text-sm">‣ Social media for pet owners</p>
+        <p className="ml-4 text-sm">‣ View without login, as guest user</p>
+      </section>
+
       <section className="md:w-80 lg:w-96 flex flex-col gap-4 absolute bottom-20 right-2 lg:bottom-20 lg:right-40 border-[2px] border-choco rounded-lg p-4">
         <form className="flex flex-col justify-center items-center gap-4">
           <div className="flex flex-col">
