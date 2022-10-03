@@ -24,7 +24,9 @@ function Options() {
         <IoBookmarksOutline className="text-2xl scale-100 ease-in duration-150 cursor-pointer hover:scale-110 active:translate-y-1" />
       </Link>
 
-      <IoMdNotificationsOutline className="text-2xl scale-100 ease-in duration-150 cursor-pointer hover:scale-110 active:translate-y-1" />
+      <Link to={`/notifications`}>
+        <IoMdNotificationsOutline className="text-2xl scale-100 ease-in duration-150 cursor-pointer hover:scale-110 active:translate-y-1" />
+      </Link>
 
       <IoLogOutOutline
         onClick={() => handleLogout()}

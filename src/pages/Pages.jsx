@@ -6,6 +6,7 @@ import Landing from "./Landing";
 import PostUpdatePopup from "../components/PostUpdatePopup";
 import CreateAlertPopup from "../components/CreateAlertPopup";
 import Bookmarks from "./Bookmarks";
+import Notifications from "./Notifications";
 
 function Pages() {
   return (
@@ -15,6 +16,7 @@ function Pages() {
       <Route path={"/home/create-post"} element={<PostUpdatePopup />} />
       <Route path={"/home/create-alert"} element={<CreateAlertPopup />} />
       <Route path={"/bookmarks"} element={<Bookmarks />} />
+      <Route path={"/notifications"} element={<Notifications />} />
       <Route path={"/*"} element={<Error />} />
     </Routes>
   );
