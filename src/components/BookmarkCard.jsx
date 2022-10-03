@@ -1,3 +1,5 @@
+import { IoRemoveCircleSharp } from "react-icons/io5";
+
 function BookmarkCard(props) {
   const { id, petName, petType, location, mediaLink } = props.bookmarkData;
 
@@ -9,12 +11,13 @@ function BookmarkCard(props) {
         alt={petName}
       />
 
-      <div className="w-40 text-center">
-        <p>{petName}</p>
-        <p>{petType}</p>
-      </div>
+      <p className="w-14">{petName}</p>
 
-      <p>{location}</p>
+      <p className="w-14">{petType}</p>
+
+      <p className="w-14">{location}</p>
+
+      <IoRemoveCircleSharp className="text-2xl" />
     </article>
   );
 }
