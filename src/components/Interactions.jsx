@@ -5,7 +5,6 @@ import {
   IoChatbubbleEllipsesOutline,
   IoShareSocialOutline,
 } from "react-icons/io5";
-import { Link } from "react-router-dom";
 
 function Interactions(props) {
   const { comments, mediaLink } = props;
@@ -30,7 +29,7 @@ function Interactions(props) {
         />
       )}
 
-      <Link
+      <div
         to={`/home/post/${mediaLink.substr(112)}/comments`}
         className="flex items-center gap-1"
       >
@@ -38,7 +37,7 @@ function Interactions(props) {
         <p className="text-xs underline underline-offset-2">
           {comments.length}
         </p>
-      </Link>
+      </div>
 
       <IoShareSocialOutline className="ml-auto text-xl active:translate-y-1" />
     </div>
