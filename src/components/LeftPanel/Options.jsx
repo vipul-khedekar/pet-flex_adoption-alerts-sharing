@@ -5,6 +5,7 @@ import {
   IoPersonOutline,
 } from "react-icons/io5";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 function Options() {
   const dispatch = useDispatch();
@@ -19,7 +20,9 @@ function Options() {
     <article className="bg-cream h-14 sm:w-60 lg:w-full flex justify-evenly items-center rounded-lg">
       <IoPersonOutline className="text-2xl scale-100 ease-in duration-150 cursor-pointer hover:scale-110 active:translate-y-1" />
 
-      <IoBookmarksOutline className="text-2xl scale-100 ease-in duration-150 cursor-pointer hover:scale-110 active:translate-y-1" />
+      <Link to={`/bookmarks`}>
+        <IoBookmarksOutline className="text-2xl scale-100 ease-in duration-150 cursor-pointer hover:scale-110 active:translate-y-1" />
+      </Link>
 
       <IoMdNotificationsOutline className="text-2xl scale-100 ease-in duration-150 cursor-pointer hover:scale-110 active:translate-y-1" />
 
