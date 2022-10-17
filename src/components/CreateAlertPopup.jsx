@@ -3,12 +3,12 @@ import { IoClose } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom";
 
 function CreateAlertPopup() {
+  const navigateTo = useNavigate();
+
   const [petName, setPetName] = useState(``);
   const [petType, setPetType] = useState(``);
   const [location, setLocation] = useState(``);
   const [mediaLink, setMediaLink] = useState(``);
-
-  const navigateTo = useNavigate();
 
   function handleSubmit() {
     setPetName(``);

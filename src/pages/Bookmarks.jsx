@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
+
 import BookmarkCard from "../components/BookmarkCard";
 
 function Bookmarks() {
-  const bookmarkList = useSelector((state) => state.bookmarks);
   const dispatch = useDispatch();
 
+  const bookmarkList = useSelector((state) => state.bookmarks);
   const [bookmarks, setBookmarks] = useState(bookmarkList);
 
   function removeBookmark(id) {

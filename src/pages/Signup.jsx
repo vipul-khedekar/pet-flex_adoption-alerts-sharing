@@ -3,13 +3,13 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 import Background from "../images/background.png";
+
 import Loader from "../components/Loader";
 
 function Signup() {
-  const { allUsers } = useSelector((state) => state.allUsers);
-
   const dispatch = useDispatch();
 
+  const { allUsers } = useSelector((state) => state.allUsers);
   const [email, setEmail] = useState(``);
   const [username, setUsername] = useState(``);
   const [password, setPassword] = useState(``);

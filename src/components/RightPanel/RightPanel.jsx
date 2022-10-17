@@ -1,8 +1,9 @@
 import { useState } from "react";
 
+import AdoptionsList from "../../data/adoptionsList.json";
+
 import SearchBar from "./SearchBar";
 import AdoptionAlerts from "./AdoptionAlerts";
-import AdoptionsList from "../../data/adoptionsList.json";
 
 function RightPanel() {
   const [adoptionList, setAdoptionList] = useState(AdoptionsList);

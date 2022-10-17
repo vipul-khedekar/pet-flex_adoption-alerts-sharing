@@ -1,5 +1,6 @@
-import Post from "../Post";
 import PostFeed from "../../data/postFeed.json";
+
+import Post from "../Post";
 
 function Feed() {
   const feed = PostFeed;

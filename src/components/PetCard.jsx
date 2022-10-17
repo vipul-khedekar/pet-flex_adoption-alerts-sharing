@@ -4,11 +4,11 @@ import { useSelector, useDispatch } from "react-redux";
 import AdoptionsList from "../data/adoptionsList.json";
 
 function PetCard(props) {
+  const dispatch = useDispatch();
+
   const { id, petName, petType, location, mediaLink } = props.pet;
 
   const bookmarks = useSelector((state) => state.bookmarks);
-  const dispatch = useDispatch();
-
   const [bookmarkList, setBookmarkList] = useState(bookmarks);
 
   function addBookmark(id) {

@@ -6,9 +6,9 @@ import { useSelector, useDispatch } from "react-redux";
 import Background from "../images/background.png";
 
 function Login() {
-  const allUsers = useSelector((state) => state.allUsers);
   const dispatch = useDispatch();
 
+  const allUsers = useSelector((state) => state.allUsers);
   const [email, setEmail] = useState(``);
   const [password, setPassword] = useState(``);
 
