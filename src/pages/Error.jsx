@@ -8,7 +8,7 @@ function Error() {
         Whoops! Looks like you have came to the wrong page.
       </p>
 
-      <p className="text-center font-caveatBrush text-4xl relative z-20">
+      <p className="relative z-20 font-caveatBrush text-4xl text-center">
         This page doesn't exists.
       </p>
 
@@ -21,9 +21,9 @@ function Error() {
         </button>
       </Link>
 
-      <IoPawSharp className="absolute z-10 top-7 right-32 text-7xl text-choco rotate-45" />
+      <IoPawSharp className="absolute z-10 top-7 right-32 text-choco text-7xl rotate-45" />
 
-      <IoPawSharp className="absolute z-10 top-20 left-32 text-6xl text-choco -rotate-12" />
+      <IoPawSharp className="absolute z-10 top-20 left-32 text-choco text-6xl -rotate-12" />
     </main>
   );
 }

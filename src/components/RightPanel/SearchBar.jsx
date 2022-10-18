@@ -7,10 +7,10 @@ function SearchBar(props) {
   const [searchQuery, setSearchQuery] = useState(``);
 
   return (
-    <article className="bg-cream h-14 w-full flex justify-center items-center p-2 rounded-lg relative">
+    <article className="h-14 w-full bg-cream flex justify-center items-center p-2 rounded-lg relative">
       <input
         onChange={(e) => setSearchQuery(e.target.value)}
-        className="bg-sea w-full p-2 pl-[3rem] pr-[5.25rem] rounded-md outline-none text-marine"
+        className="w-full bg-sea p-2 pl-[3rem] pr-[5.25rem] rounded-md outline-none text-marine"
         value={searchQuery}
         placeholder="Search for pet names or types"
         type="text"
@@ -18,12 +18,12 @@ function SearchBar(props) {
 
       <IoMdSearch
         onClick={() => handleSearch(searchQuery)}
-        className=" bg-marine absolute p-1 left-3 z-10 rounded-md text-sea text-3xl"
+        className=" bg-marine p-1 rounded-md absolute z-10 left-3 text-sea text-3xl"
       />
 
       <button
         onClick={() => showAll()}
-        className="bg-marine text-sea text-sm px-2 py-1 rounded-md absolute z-10 right-3"
+        className="bg-marine px-2 py-1 rounded-md absolute z-10 right-3 text-sea text-sm"
         type="button"
       >
         Show All

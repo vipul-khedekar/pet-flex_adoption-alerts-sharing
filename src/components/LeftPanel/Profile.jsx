@@ -4,9 +4,9 @@ function Profile() {
   const user = JSON.parse(localStorage.getItem(`currentUser`));
 
   return (
-    <article className="bg-cream h-60 sm:w-60 lg:w-full p-4 mt-24 rounded-lg relative">
+    <article className="h-60 sm:w-60 lg:w-full bg-cream p-4 mt-24 rounded-lg relative">
       <img
-        className="h-52 w-52 object-cover rounded-lg absolute top-[-20%] left-[50%] translate-x-[-50%]"
+        className="h-52 w-52 rounded-lg absolute top-[-20%] left-[50%] translate-x-[-50%] object-cover"
         src={DefaultProfilePic}
         alt="profile-pic"
       />

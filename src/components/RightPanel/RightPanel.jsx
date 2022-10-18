@@ -34,7 +34,7 @@ function RightPanel() {
       {adoptionList.length !== 0 ? (
         <AdoptionAlerts adoptionList={adoptionList} />
       ) : (
-        <article className="bg-cream h-[87vh] w-full flex justify-center items-center p-4 rounded-lg text-choco font-bold text-center">
+        <article className="h-[87vh] w-full bg-cream flex justify-center items-center p-4 rounded-lg text-choco font-bold text-center">
           No matching results for the provided search query
         </article>
       )}

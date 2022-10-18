@@ -75,10 +75,10 @@ function Login() {
         <p className="ml-4 text-sm">‣ View without login, as guest user</p>
       </section>
 
-      <section className="md:w-80 lg:w-96 flex flex-col gap-4 absolute bottom-28 right-2 lg:bottom-28 lg:right-40 border-[2px] border-choco rounded-lg p-4">
+      <section className="md:w-80 lg:w-96 flex flex-col gap-4 p-4 border-[2px] border-choco rounded-lg absolute bottom-28 right-2 lg:bottom-28 lg:right-40">
         <button
           onClick={() => handleGuestLogin()}
-          className="bg-choco flex justify-center items-center gap-2 px-[6px] py-2 rounded-md text-lg text-sunny"
+          className="bg-choco flex justify-center items-center gap-2 px-[6px] py-2 rounded-md text-sunny text-lg"
           type="button"
         >
           <IoPlayOutline className="md:hidden text-xl" />
@@ -88,7 +88,7 @@ function Login() {
         <form className="flex flex-col justify-center items-center gap-4">
           <div className="flex flex-col">
             <label
-              className="text-sm text-choco font-bold ml-2"
+              className="ml-2 text-choco text-sm font-bold"
               htmlFor="email"
             >
               E-mail
@@ -96,7 +96,7 @@ function Login() {
 
             <input
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
+              className="h-12 w-64 bg-cream p-2 -mt-1 rounded-lg outline-none text-choco text-xl"
               value={email}
               type="email"
               id="email"
@@ -105,7 +105,7 @@ function Login() {
 
           <div className="flex flex-col">
             <label
-              className="text-sm text-choco ml-2 font-bold"
+              className="ml-2 text-choco text-sm font-bold"
               htmlFor="password"
             >
               Password
@@ -113,7 +113,7 @@ function Login() {
 
             <input
               onChange={(e) => setPassword(e.target.value)}
-              className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
+              className="h-12 w-64 bg-cream p-2 -mt-1 rounded-lg outline-none text-choco text-xl"
               value={password}
               type="password"
               id="password"
@@ -122,7 +122,7 @@ function Login() {
 
           <button
             onClick={(e) => handleLogin(e)}
-            className="bg-choco px-3 py-1 rounded-md text-lg text-sunny"
+            className="bg-choco px-3 py-1 rounded-md text-sunny text-lg"
             type="submit"
           >
             Login
@@ -144,7 +144,7 @@ function Login() {
         </div>
 
         <Link
-          className="bg-choco px-3 py-1 rounded-md text-center text-lg text-sunny"
+          className="bg-choco px-3 py-1 rounded-md text-sunny text-lg text-center"
           to={"/signup"}
           typeof="button"
         >

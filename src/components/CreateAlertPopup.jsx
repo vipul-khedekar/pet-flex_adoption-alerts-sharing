@@ -21,12 +21,12 @@ function CreateAlertPopup() {
   };
 
   return (
-    <aside className="bg-sea h-72 w-[80vw] lg:w-[50vw] flex flex-col gap-4 p-6 rounded-2xl absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 modal-shadow">
+    <aside className="h-72 w-[80vw] lg:w-[50vw] bg-sea flex flex-col gap-4 p-6 rounded-2xl absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] modal-shadow">
       <div className="flex justify-between items-center">
         <p className="font-bold">Create an adoption alert!</p>
 
         <Link to={"/"}>
-          <IoClose className="bg-marine rounded-md text-2xl text-sea active:translate-y-1" />
+          <IoClose className="bg-marine rounded-md text-sea text-2xl active:translate-y-1" />
         </Link>
       </div>
 
@@ -39,7 +39,7 @@ function CreateAlertPopup() {
 
             <input
               onChange={(e) => setPetName(e.target.value)}
-              className="bg-cream h-10 w-full p-2 -mt-1 rounded-md text-choco text-xl outline-none"
+              className="h-10 w-full bg-cream p-2 -mt-1 rounded-md outline-none text-choco text-xl"
               value={petName}
               placeholder="Pet name"
               type="text"
@@ -55,7 +55,7 @@ function CreateAlertPopup() {
 
             <input
               onChange={(e) => setPetType(e.target.value)}
-              className="bg-cream h-10 w-full p-2 -mt-1 rounded-md text-choco text-xl outline-none"
+              className="h-10 w-full bg-cream p-2 -mt-1 rounded-md outline-none text-choco text-xl"
               value={petType}
               placeholder="Pet type"
               type="text"
@@ -71,7 +71,7 @@ function CreateAlertPopup() {
 
             <input
               onChange={(e) => setLocation(e.target.value)}
-              className="bg-cream h-10 w-full p-2 -mt-1 rounded-md text-choco text-xl outline-none"
+              className="h-10 w-full bg-cream p-2 -mt-1 rounded-md outline-none text-choco text-xl"
               value={location}
               placeholder="Location"
               type="text"
@@ -88,7 +88,7 @@ function CreateAlertPopup() {
 
           <input
             onChange={(e) => setMediaLink(e.target.value)}
-            className="bg-cream h-10 w-full p-2 -mt-1 rounded-md text-choco text-xl outline-none"
+            className="h-10 w-full bg-cream p-2 -mt-1 rounded-md outline-none text-choco text-xl"
             value={mediaLink}
             placeholder="Image link"
             type="text"
@@ -100,7 +100,7 @@ function CreateAlertPopup() {
         <div className="flex justify-between items-center gap-20">
           <button
             onClick={() => handleSubmit()}
-            className="bg-marine h-10 w-40 px-3 py-2 rounded-md text-lg text-sea"
+            className="h-10 w-40 bg-marine px-3 py-2 rounded-md text-sea text-lg"
             type="submit"
           >
             Alert

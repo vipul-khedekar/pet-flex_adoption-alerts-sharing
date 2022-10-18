@@ -33,8 +33,8 @@ function PetCard(props) {
   };
 
   return (
-    <div className="h-80 w-60 flex flex-col gap-2 border border-choco p-2 rounded-lg">
-      <p className="text-center font-bold">{petName}</p>
+    <div className="h-80 w-60 flex flex-col gap-2 p-2 border border-choco rounded-lg">
+      <p className="font-bold text-center">{petName}</p>
 
       <img
         className="h-36 w-56 rounded-lg object-cover scale-100 ease-in duration-150 hover:scale-105"

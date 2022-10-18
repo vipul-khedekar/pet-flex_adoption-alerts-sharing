@@ -18,9 +18,9 @@ html, body {
 }
 
 body {
-    background-color: var(--sea);
     height: 100vh;
     width: 100vw;
+    background-color: var(--sea);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +28,6 @@ body {
     gap: 2rem;
     color: var(--marine);
     font-family: var(--nunito);
-    /* position: relative; */
 }
 
 article {
@@ -51,8 +50,8 @@ input[type=number] {
 /* Chrome/Edge - remove number input arrows */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
     margin: 0;
+    -webkit-appearance: none;
 }
 
 @tailwind base;
