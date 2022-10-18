@@ -16,6 +16,7 @@ function Post(props) {
 
         <div>
           <p className="font-bold">{username}</p>
+
           <p className="text-xs">{`@${tag}`}</p>
         </div>
       </div>

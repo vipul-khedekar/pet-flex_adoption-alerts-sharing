@@ -41,9 +41,9 @@ function CreateAlertPopup() {
               onChange={(e) => setPetName(e.target.value)}
               className="bg-cream h-10 w-full p-2 -mt-1 rounded-md text-choco text-xl outline-none"
               value={petName}
+              placeholder="Pet name"
               type="text"
               id="petName"
-              placeholder="Pet name"
               required
             />
           </div>
@@ -57,9 +57,9 @@ function CreateAlertPopup() {
               onChange={(e) => setPetType(e.target.value)}
               className="bg-cream h-10 w-full p-2 -mt-1 rounded-md text-choco text-xl outline-none"
               value={petType}
+              placeholder="Pet type"
               type="text"
               id="petType"
-              placeholder="Pet type"
               required
             />
           </div>
@@ -73,9 +73,9 @@ function CreateAlertPopup() {
               onChange={(e) => setLocation(e.target.value)}
               className="bg-cream h-10 w-full p-2 -mt-1 rounded-md text-choco text-xl outline-none"
               value={location}
+              placeholder="Location"
               type="text"
               id="Location"
-              placeholder="Location"
               required
             />
           </div>
@@ -90,9 +90,9 @@ function CreateAlertPopup() {
             onChange={(e) => setMediaLink(e.target.value)}
             className="bg-cream h-10 w-full p-2 -mt-1 rounded-md text-choco text-xl outline-none"
             value={mediaLink}
+            placeholder="Image link"
             type="text"
             id="imageLink"
-            placeholder="Image link"
             required
           />
         </div>

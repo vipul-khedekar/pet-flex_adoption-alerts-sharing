@@ -12,11 +12,17 @@ function Pages() {
   return (
     <Routes>
       <Route path={"/"} element={<Landing />} />
+
       <Route path={"/signup"} element={<Signup />} />
+
       <Route path={"/home/create-post"} element={<PostUpdatePopup />} />
+
       <Route path={"/home/create-alert"} element={<CreateAlertPopup />} />
+
       <Route path={"/bookmarks"} element={<Bookmarks />} />
+
       <Route path={"/notifications"} element={<Notifications />} />
+
       <Route path={"/*"} element={<Error />} />
     </Routes>
   );

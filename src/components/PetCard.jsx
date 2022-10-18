@@ -44,6 +44,7 @@ function PetCard(props) {
 
       <div className="flex justify-between items-center px-4">
         <p>{petType}</p>
+
         <p>{location}</p>
       </div>
 

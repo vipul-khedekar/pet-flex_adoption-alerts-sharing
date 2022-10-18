@@ -12,8 +12,8 @@ function SearchBar(props) {
         onChange={(e) => setSearchQuery(e.target.value)}
         className="bg-sea w-full p-2 pl-[3rem] pr-[5.25rem] rounded-md outline-none text-marine"
         value={searchQuery}
-        type="text"
         placeholder="Search for pet names or types"
+        type="text"
       />
 
       <IoMdSearch

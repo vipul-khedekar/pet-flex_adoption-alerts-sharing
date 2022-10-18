@@ -92,8 +92,11 @@ function Signup() {
         <p className="mb-2 font-caveatBrush text-8xl">Pet Flex</p>
 
         <p className="ml-4 text-sm">‣ Search for pets to adoption</p>
+
         <p className="ml-4 text-sm">‣ Bookmark the alerts</p>
+
         <p className="ml-4 text-sm">‣ Social media for pet owners</p>
+
         <p className="ml-4 text-sm">‣ View without login, as guest user</p>
       </section>
 
@@ -110,9 +113,9 @@ function Signup() {
             <input
               onChange={(e) => setEmail(e.target.value)}
               className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
-              id="email"
-              type="email"
               value={email}
+              type="email"
+              id="email"
               required
             />
           </div>
@@ -128,9 +131,9 @@ function Signup() {
             <input
               onChange={(e) => setUsername(e.target.value)}
               className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
-              id="username"
-              type="text"
               value={username}
+              type="text"
+              id="username"
               required
             />
           </div>
@@ -146,9 +149,9 @@ function Signup() {
             <input
               onChange={(e) => setPassword(e.target.value)}
               className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
-              id="password"
-              type="password"
               value={password}
+              type="password"
+              id="password"
               required
             />
           </div>
@@ -164,9 +167,9 @@ function Signup() {
             <input
               onChange={(e) => setConfirmPassword(e.target.value)}
               className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
-              id="password"
-              type="password"
               value={confirmPassword}
+              type="password"
+              id="password"
               required
             />
           </div>

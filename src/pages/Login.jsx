@@ -67,8 +67,11 @@ function Login() {
         <p className="mb-2 font-caveatBrush text-8xl">Pet Flex</p>
 
         <p className="ml-4 text-sm">‣ Search for pets to adoption</p>
+
         <p className="ml-4 text-sm">‣ Bookmark the alerts</p>
+
         <p className="ml-4 text-sm">‣ Social media for pet owners</p>
+
         <p className="ml-4 text-sm">‣ View without login, as guest user</p>
       </section>
 
@@ -94,9 +97,9 @@ function Login() {
             <input
               onChange={(e) => setEmail(e.target.value)}
               className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
-              id="email"
               value={email}
               type="email"
+              id="email"
             />
           </div>
 
@@ -111,9 +114,9 @@ function Login() {
             <input
               onChange={(e) => setPassword(e.target.value)}
               className="bg-cream h-12 w-64 p-2 -mt-1 rounded-lg text-choco text-xl outline-none"
-              id="password"
               value={password}
               type="password"
+              id="password"
             />
           </div>
 
@@ -141,8 +144,8 @@ function Login() {
         </div>
 
         <Link
-          to={"/signup"}
           className="bg-choco px-3 py-1 rounded-md text-center text-lg text-sunny"
+          to={"/signup"}
           typeof="button"
         >
           I want to sign up

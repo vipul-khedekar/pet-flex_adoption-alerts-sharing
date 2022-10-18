@@ -30,10 +30,11 @@ function Interactions(props) {
       )}
 
       <div
-        to={`/home/post/${mediaLink.substr(112)}/comments`}
         className="flex items-center gap-1"
+        to={`/home/post/${mediaLink.substr(112)}/comments`}
       >
         <IoChatbubbleEllipsesOutline className="text-xl active:translate-y-1" />
+
         <p className="text-xs underline underline-offset-2">
           {comments.length}
         </p>
