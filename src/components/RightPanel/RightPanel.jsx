@@ -8,7 +8,7 @@ import AdoptionAlerts from "./AdoptionAlerts";
 function RightPanel() {
   const [adoptionList, setAdoptionList] = useState(AdoptionsList);
 
-  function handleSearch(searchQuery) {
+  const handleSearch = (searchQuery) => {
     if (searchQuery === ``) {
       return;
     }
@@ -19,12 +19,13 @@ function RightPanel() {
         pet.petType.toLowerCase() === searchQuery.toLowerCase()
       );
     });
-    setAdoptionList(searchResult);
-  }
 
-  function showAll() {
+    setAdoptionList(searchResult);
+  };
+
+  const showAll = () => {
     setAdoptionList(AdoptionsList);
-  }
+  };
 
   return (
     <section className="flex flex-col flex-[3] justify-start items-center gap-4">

@@ -18,7 +18,7 @@ function Signup() {
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState(``);
 
-  function handleSignUp(e) {
+  const handleSignUp = (e) => {
     e.preventDefault();
 
     if (email === `` || !email.includes(`@`) || !email.includes(`.com`)) {
@@ -77,7 +77,6 @@ function Signup() {
     setEmail(``);
     setPassword(``);
     setConfirmPassword(``);
-
     setTimeout(() => {
       setIsLoading(false);
       setMessage(`Account created. Go to login page.`);
@@ -85,7 +84,7 @@ function Signup() {
         setMessage(``);
       }, 3000);
     }, 1500);
-  }
+  };
 
   return (
     <main className="h-[100vh] w-[100vw] relative">

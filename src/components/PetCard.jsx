@@ -11,7 +11,7 @@ function PetCard(props) {
   const bookmarks = useSelector((state) => state.bookmarks);
   const [bookmarkList, setBookmarkList] = useState(bookmarks);
 
-  function addBookmark(id) {
+  const addBookmark = (id) => {
     if (bookmarkList.length > 0) {
       for (let i = 0; i < bookmarkList.length; i++) {
         if (bookmarkList[i].id === id) {
@@ -23,15 +23,14 @@ function PetCard(props) {
     const newBookmarks = AdoptionsList.find((pet) => {
       return pet.id === id;
     });
-
     bookmarkList.unshift(newBookmarks);
-    setBookmarkList(bookmarkList);
 
+    setBookmarkList(bookmarkList);
     dispatch({
       type: `ADD_BOOKMARK`,
       bookmarks: bookmarkList,
     });
-  }
+  };
 
   return (
     <div className="h-80 w-60 flex flex-col gap-2 border border-choco p-2 rounded-lg">

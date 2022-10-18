@@ -10,11 +10,11 @@ import { Link } from "react-router-dom";
 function Options() {
   const dispatch = useDispatch();
 
-  function handleLogout() {
+  const handleLogout = () => {
     dispatch({ type: `TOGGLE_ACTIVE`, isUserActive: false });
     localStorage.setItem(`userActive`, JSON.stringify(false));
     localStorage.removeItem(`currentUser`);
-  }
+  };
 
   return (
     <article className="bg-cream h-14 sm:w-60 lg:w-full flex justify-evenly items-center rounded-lg">

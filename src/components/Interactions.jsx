@@ -11,9 +11,9 @@ function Interactions(props) {
 
   const [isLiked, setIsLiked] = useState(false);
 
-  function toggleLike() {
+  const toggleLike = () => {
     setIsLiked(!isLiked);
-  }
+  };
 
   return (
     <div className="flex justify-start items-center gap-4 px-2">

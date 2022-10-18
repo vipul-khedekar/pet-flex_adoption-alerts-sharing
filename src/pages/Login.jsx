@@ -12,7 +12,7 @@ function Login() {
   const [email, setEmail] = useState(``);
   const [password, setPassword] = useState(``);
 
-  function handleLogin(e) {
+  const handleLogin = (e) => {
     e.preventDefault();
 
     if (email === `` || !email.includes(`@`) || !email.includes(`.com`)) {
@@ -36,20 +36,19 @@ function Login() {
       dispatch({ type: `TOGGLE_ACTIVE`, isUserActive: true });
       localStorage.setItem(`currentUser`, JSON.stringify(currentUser));
       localStorage.setItem(`userActive`, JSON.stringify(true));
-
       setEmail(``);
       setPassword(``);
     } else {
       alert(`Email or password is incorrect.`);
+
       setEmail(``);
       setPassword(``);
       return;
     }
-  }
+  };
 
-  function handleGuestLogin() {
+  const handleGuestLogin = () => {
     const uniqueNo = Date.now();
-
     const currentUser = {
       id: uniqueNo,
       email: `guest@guest.com`,
@@ -60,7 +59,7 @@ function Login() {
     dispatch({ type: `TOGGLE_ACTIVE`, isUserActive: true });
     localStorage.setItem(`currentUser`, JSON.stringify(currentUser));
     localStorage.setItem(`userActive`, JSON.stringify(true));
-  }
+  };
 
   return (
     <main className="h-[100vh] w-[100vw] relative">
