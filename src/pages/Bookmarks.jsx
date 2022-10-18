@@ -15,11 +15,15 @@ function Bookmarks() {
     });
 
     setBookmarks(filteredList);
-    dispatch({ type: `ADD_BOOKMARK`, bookmarks: bookmarks });
+    dispatch({ type: `ADD_BOOKMARK`, bookmarks: filteredList });
   };
 
   return (
-    <aside className="h-auto w-[80vw] lg:w-[50vw] bg-sea flex flex-col gap-4 p-6 rounded-2xl absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] modal-shadow overflow-y-scroll">
+    <aside className="h-auto w-[80vw] lg:w-[50vw] bg-sea flex flex-col justify-center items-center gap-4 p-6 rounded-2xl absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] modal-shadow overflow-y-scroll">
+      {bookmarks.length !== 0 && (
+        <h3 className="text-2xl font-bold">Bookmarks</h3>
+      )}
+
       {bookmarks.length !== 0 ? (
         bookmarks.map((bookmark) => (
           <BookmarkCard
