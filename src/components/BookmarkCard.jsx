@@ -5,7 +5,7 @@ function BookmarkCard(props) {
   const removeBookmark = props.removeBookmark;
 
   return (
-    <article className="flex justify-between items-center pr-4 rounded-md">
+    <article className="w-full flex justify-between items-center pr-4 rounded-md">
       <img
         className="h-16 w-16 rounded-l-md object-cover"
         src={mediaLink}
