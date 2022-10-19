@@ -7,7 +7,10 @@ function SearchBar(props) {
   const [searchQuery, setSearchQuery] = useState(``);
 
   return (
-    <article className="h-14 w-full bg-cream flex justify-center items-center p-2 rounded-lg relative">
+    <form
+      onSubmit={(e) => handleSearch(e, searchQuery)}
+      className="h-14 w-full bg-cream flex justify-center items-center p-2 rounded-lg relative"
+    >
       <input
         onChange={(e) => setSearchQuery(e.target.value)}
         className="w-full bg-sea p-2 pl-[3rem] pr-[5.25rem] rounded-md outline-none text-marine"
@@ -16,10 +19,7 @@ function SearchBar(props) {
         type="text"
       />
 
-      <IoMdSearch
-        onClick={() => handleSearch(searchQuery)}
-        className=" bg-marine p-1 rounded-md absolute z-10 left-3 text-sea text-3xl"
-      />
+      <IoMdSearch className=" bg-marine p-1 rounded-md absolute z-10 left-3 text-sea text-3xl" />
 
       <button
         onClick={() => showAll()}
@@ -28,7 +28,7 @@ function SearchBar(props) {
       >
         Show All
       </button>
-    </article>
+    </form>
   );
 }
 

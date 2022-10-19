@@ -8,15 +8,22 @@ import AdoptionAlerts from "./AdoptionAlerts";
 function RightPanel() {
   const [adoptionList, setAdoptionList] = useState(AdoptionsList);
 
-  const handleSearch = (searchQuery) => {
+  const handleSearch = (e, searchQuery) => {
+    e.preventDefault();
+
     if (searchQuery === ``) {
+      return;
+    }
+
+    if (searchQuery.length <= 3) {
+      alert(`Search query should be at least three characters.`);
       return;
     }
 
     const searchResult = AdoptionsList.filter((pet) => {
       return (
-        pet.petName.toLowerCase() === searchQuery.toLowerCase() ||
-        pet.petType.toLowerCase() === searchQuery.toLowerCase()
+        pet.petName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        pet.petType.toLowerCase().includes(searchQuery.toLowerCase())
       );
     });
 
