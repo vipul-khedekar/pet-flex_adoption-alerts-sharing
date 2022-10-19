@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 import BookmarkCard from "../components/BookmarkCard";
 
@@ -33,8 +34,17 @@ function Bookmarks() {
           />
         ))
       ) : (
-        <p className="font-bold text-center">No bookmark added</p>
+        <p className="text-lg font-bold text-center">No bookmark added</p>
       )}
+
+      <Link to={"/"} className="self-end">
+        <button
+          className="h-10 w-40 bg-marine rounded-md text-sea text-lg"
+          type="button"
+        >
+          Go Back
+        </button>
+      </Link>
     </aside>
   );
 }
