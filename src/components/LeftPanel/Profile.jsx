@@ -1,4 +1,4 @@
-import DefaultProfilePic from "../../images/profile-picture.jpg";
+import ProfilePicGuest from "../../images/profile-pic-guest.webp";
 
 function Profile() {
   const user = JSON.parse(localStorage.getItem(`currentUser`));
@@ -7,7 +7,7 @@ function Profile() {
     <article className="h-60 sm:w-60 lg:w-full bg-cream p-4 mt-24 rounded-lg relative">
       <img
         className="h-52 w-52 rounded-lg absolute top-[-20%] left-[50%] translate-x-[-50%] object-cover"
-        src={DefaultProfilePic}
+        src={ProfilePicGuest}
         alt="profile-pic"
       />
 
