@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Background from "../images/background.png";
 
-import Loader from "../components/Loader";
+import Spinner from "../components/loaders/Spinner";
 
 function Signup() {
   const dispatch = useDispatch();
@@ -175,7 +175,7 @@ function Signup() {
           </div>
 
           {isLoading ? (
-            <Loader />
+            <Spinner />
           ) : (
             <button
               onClick={(e) => handleSignUp(e)}
