@@ -39,6 +39,7 @@ function PetCard(props) {
       <img
         className="h-36 w-56 rounded-lg object-cover scale-100 ease-in duration-150 hover:scale-105"
         src={mediaLink}
+        loading="lazy"
         alt="pet-pic"
       />
 

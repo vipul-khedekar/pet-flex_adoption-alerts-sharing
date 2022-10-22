@@ -9,6 +9,7 @@ function BookmarkCard(props) {
       <img
         className="h-16 w-16 rounded-l-md object-cover"
         src={mediaLink}
+        loading="lazy"
         alt={petName}
       />
 

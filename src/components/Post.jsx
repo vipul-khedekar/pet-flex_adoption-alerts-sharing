@@ -12,6 +12,7 @@ function Post(props) {
         <img
           className="h-10 w-10 rounded-full object-cover"
           src={ProfilePicDefault}
+          loading="lazy"
           alt="profile-pic"
         />
 
@@ -28,6 +29,7 @@ function Post(props) {
         <img
           className="h-52 lg:h-[17rem] w-full rounded-lg object-cover object-center"
           src={mediaLink || PostPicDefault}
+          loading="lazy"
           alt="content-pic"
         />
       </div>
