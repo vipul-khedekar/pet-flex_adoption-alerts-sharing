@@ -72,7 +72,7 @@ function Login() {
 
         <p className="ml-4 text-sm">‣ Social media for pet owners</p>
 
-        <p className="ml-4 text-sm">‣ View without login, as guest user</p>
+        <p className="ml-4 text-sm">‣ View without login, as a guest user</p>
       </section>
 
       <section className="md:w-80 lg:w-96 flex flex-col gap-4 p-4 border-[2px] border-choco rounded-lg absolute bottom-28 right-2 lg:bottom-28 lg:right-40">
