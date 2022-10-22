@@ -15,7 +15,7 @@ function RightPanel() {
       return;
     }
 
-    if (searchQuery.length <= 3) {
+    if (searchQuery.length <= 2) {
       alert(`Search query should be at least three characters.`);
       return;
     }
