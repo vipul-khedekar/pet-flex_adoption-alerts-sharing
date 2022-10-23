@@ -9,7 +9,7 @@ function SearchBar(props) {
   return (
     <form
       onSubmit={(e) => handleSearch(e, searchQuery)}
-      className="h-14 w-full bg-cream flex justify-center items-center p-2 rounded-lg relative"
+      className="h-14 w-full bg-cream flex justify-center items-center p-2 rounded-lg relative island"
     >
       <input
         onChange={(e) => setSearchQuery(e.target.value)}

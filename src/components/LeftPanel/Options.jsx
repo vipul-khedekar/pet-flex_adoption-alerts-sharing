@@ -17,7 +17,7 @@ function Options() {
   };
 
   return (
-    <section className="h-14 sm:w-60 lg:w-full bg-cream flex justify-evenly items-center rounded-lg">
+    <section className="h-14 sm:w-60 lg:w-full bg-cream flex justify-evenly items-center rounded-lg island">
       <IoPersonOutline className="text-2xl scale-100 ease-in duration-150 cursor-pointer hover:scale-110 active:translate-y-1" />
 
       <Link to={`/bookmarks`}>

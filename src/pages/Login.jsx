@@ -79,7 +79,7 @@ function Login() {
         </section>
       </article>
 
-      <article className="md:w-80 lg:w-96 flex flex-col gap-4 p-4 border-[2px] border-choco rounded-lg absolute bottom-28 right-2 lg:bottom-28 lg:right-40">
+      <article className="md:w-80 lg:w-96 flex flex-col gap-4 p-4 border border-choco rounded-lg absolute bottom-28 right-2 lg:bottom-28 lg:right-40 island">
         <button
           onClick={() => handleGuestLogin()}
           className="bg-choco flex justify-center items-center gap-2 px-[6px] py-2 rounded-md text-sunny text-lg"

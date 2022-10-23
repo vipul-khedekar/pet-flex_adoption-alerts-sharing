@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Logo() {
   return (
-    <section className="h-24 sm:w-60 lg:w-full bg-cream flex justify-center items-center p-2 -mb-9 rounded-lg relative">
+    <section className="h-24 sm:w-60 lg:w-full bg-cream flex justify-center items-center p-2 -mb-9 rounded-lg relative island">
       <Link to={`/`}>
         <IoMdPaw className="text-choco text-7xl absolute z-10 top-6 left-0 -rotate-45" />
 

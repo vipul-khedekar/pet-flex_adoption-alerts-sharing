@@ -30,16 +30,16 @@ body {
     font-family: var(--nunito);
 }
 
-/* section {
-    box-shadow: 0 1px 4px var(--steel);
-} */
-
 button:active {
     transform: translate(0, 3px);
 }
 
 .modal-shadow {
     box-shadow: 0 20px 300px black;
+}
+
+.island {
+    box-shadow: 0 1px 4px var(--steel);
 }
 
 /* Mozilla - remove number input arrows */

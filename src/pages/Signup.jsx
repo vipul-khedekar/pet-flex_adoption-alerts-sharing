@@ -104,7 +104,7 @@ function Signup() {
         </section>
       </article>
 
-      <article className="md:w-80 lg:w-96 flex flex-col gap-4 absolute bottom-20 right-2 lg:bottom-20 lg:right-40 border-[2px] border-choco rounded-lg p-4">
+      <article className="md:w-80 lg:w-96 flex flex-col gap-4 p-4 border border-choco rounded-lg absolute bottom-20 right-2 lg:bottom-20 lg:right-40 island">
         <form className="flex flex-col justify-center items-center gap-4">
           <section className="flex flex-col">
             <label
