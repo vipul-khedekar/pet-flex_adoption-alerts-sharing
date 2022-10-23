@@ -22,17 +22,17 @@ function CreateAlertPopup() {
 
   return (
     <aside className="h-72 w-[80vw] lg:w-[50vw] bg-sea flex flex-col gap-4 p-6 rounded-2xl absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] modal-shadow">
-      <div className="flex justify-between items-center">
+      <header className="flex justify-between items-center">
         <p className="font-bold">Create an adoption alert!</p>
 
-        <Link to={"/"}>
+        <Link to={`/`}>
           <IoClose className="bg-marine rounded-md text-sea text-2xl active:translate-y-1" />
         </Link>
-      </div>
+      </header>
 
       <form className="flex flex-col gap-5 justify-center items-center">
-        <div className="flex justify-between items-center gap-4">
-          <div>
+        <section className="flex justify-between items-center gap-4">
+          <section>
             <label className="ml-2 text-sm" htmlFor="petName">
               Pet name
             </label>
@@ -46,9 +46,9 @@ function CreateAlertPopup() {
               id="petName"
               required
             />
-          </div>
+          </section>
 
-          <div>
+          <section>
             <label className="m-2 text-sm" htmlFor="petType">
               Pet Type
             </label>
@@ -62,9 +62,9 @@ function CreateAlertPopup() {
               id="petType"
               required
             />
-          </div>
+          </section>
 
-          <div>
+          <section>
             <label className="m-2 text-sm" htmlFor="location">
               Location
             </label>
@@ -78,10 +78,10 @@ function CreateAlertPopup() {
               id="Location"
               required
             />
-          </div>
-        </div>
+          </section>
+        </section>
 
-        <div className="w-full">
+        <section className="w-full">
           <label className="ml-2 text-sm" htmlFor="imageLink">
             Image link
           </label>
@@ -95,9 +95,9 @@ function CreateAlertPopup() {
             id="imageLink"
             required
           />
-        </div>
+        </section>
 
-        <div className="flex justify-between items-center gap-20">
+        <footer className="flex justify-between items-center gap-20">
           <button
             onClick={() => handleSubmit()}
             className="h-10 w-40 bg-marine px-3 py-2 rounded-md text-sea text-lg"
@@ -105,7 +105,7 @@ function CreateAlertPopup() {
           >
             Alert
           </button>
-        </div>
+        </footer>
       </form>
     </aside>
   );

@@ -5,7 +5,7 @@ import Poster from "./Poster";
 
 function LeftPanel() {
   return (
-    <section className="flex flex-col flex-1 justify-start items-center gap-4">
+    <article className="flex flex-col flex-1 justify-start items-center gap-4">
       <Logo />
 
       <Profile />
@@ -13,7 +13,7 @@ function LeftPanel() {
       <Poster />
 
       <Options />
-    </section>
+    </article>
   );
 }
 

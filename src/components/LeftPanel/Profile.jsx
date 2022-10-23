@@ -4,7 +4,7 @@ function Profile() {
   const user = JSON.parse(localStorage.getItem(`currentUser`));
 
   return (
-    <article className="h-60 sm:w-60 lg:w-full bg-cream p-4 mt-24 rounded-lg relative">
+    <section className="h-60 sm:w-60 lg:w-full bg-cream p-4 mt-24 rounded-lg relative">
       <img
         className="h-52 w-52 rounded-lg absolute top-[-20%] left-[50%] translate-x-[-50%] object-cover"
         src={ProfilePicGuest}
@@ -16,7 +16,7 @@ function Profile() {
 
         <p className="text-sm">{`(@${user.tag})`}</p>
       </div>
-    </article>
+    </section>
   );
 }
 

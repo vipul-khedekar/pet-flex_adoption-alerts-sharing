@@ -5,7 +5,7 @@ function BookmarkCard(props) {
   const removeBookmark = props.removeBookmark;
 
   return (
-    <article className="w-full flex justify-between items-center pr-4 rounded-md">
+    <section className="flex justify-between items-center pr-4 border border-marine rounded-md">
       <img
         className="h-16 w-16 rounded-l-md object-cover"
         src={mediaLink}
@@ -13,17 +13,19 @@ function BookmarkCard(props) {
         alt={petName}
       />
 
-      <p className="w-14">{petName}</p>
+      <section className="w-[55%] flex justify-between gap-8">
+        <p className="w-14">{petName}</p>
 
-      <p className="w-14">{petType}</p>
+        <p className="w-14">{petType}</p>
 
-      <p className="w-14">{location}</p>
+        <p className="w-14">{location}</p>
+      </section>
 
       <IoRemoveCircleSharp
         onClick={() => removeBookmark(id)}
         className="text-2xl"
       />
-    </article>
+    </section>
   );
 }
 

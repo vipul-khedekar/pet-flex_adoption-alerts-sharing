@@ -7,8 +7,8 @@ function Post(props) {
   const { username, tag, body, mediaLink, comments } = props.post;
 
   return (
-    <div className="flex flex-col gap-2 mb-5">
-      <div className="flex justify-start items-center gap-2">
+    <section className="flex flex-col gap-2 mb-5">
+      <header className="flex justify-start items-center gap-2">
         <img
           className="h-10 w-10 rounded-full object-cover"
           src={ProfilePicDefault}
@@ -21,9 +21,9 @@ function Post(props) {
 
           <p className="text-xs">{`@${tag}`}</p>
         </div>
-      </div>
+      </header>
 
-      <div className="flex flex-col justify-center items-center gap-2">
+      <section className="flex flex-col justify-center items-center gap-2">
         <p className="self-start ml-2">{body}</p>
 
         <img
@@ -32,12 +32,12 @@ function Post(props) {
           loading="lazy"
           alt="content-pic"
         />
-      </div>
+      </section>
 
       <Interactions comments={comments} mediaLink={mediaLink} />
 
       <hr className="border-[0.5px] border-choco" />
-    </div>
+    </section>
   );
 }
 

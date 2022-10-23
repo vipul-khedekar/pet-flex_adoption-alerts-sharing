@@ -33,7 +33,7 @@ function PetCard(props) {
   };
 
   return (
-    <div className="h-80 w-60 flex flex-col gap-2 p-2 border border-choco rounded-lg">
+    <section className="h-80 w-60 flex flex-col gap-2 p-2 border border-choco rounded-lg">
       <p className="font-bold text-center">{petName}</p>
 
       <img
@@ -49,7 +49,7 @@ function PetCard(props) {
         <p>{location}</p>
       </div>
 
-      <div className="flex flex-col gap-2 px-4">
+      <section className="flex flex-col gap-2 px-4">
         <button
           className="bg-choco px-3 py-1 rounded-md text-sunny"
           type="button"
@@ -64,8 +64,8 @@ function PetCard(props) {
         >
           Bookmark
         </button>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 }
 

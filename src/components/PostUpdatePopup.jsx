@@ -8,13 +8,13 @@ function PostUpdatePopup() {
 
   return (
     <aside className="h-72 w-[80vw] lg:w-[50vw] bg-sea flex flex-col gap-4 p-6 rounded-2xl absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] modal-shadow">
-      <div className="flex justify-between items-center">
+      <header className="flex justify-between items-center">
         <p className="font-bold">Post an update!</p>
 
-        <Link to={"/"}>
+        <Link to={`/`}>
           <IoClose className="bg-marine rounded-md text-sea text-2xl active:translate-y-1" />
         </Link>
-      </div>
+      </header>
 
       <textarea
         onChange={(e) => setTextBody(e.target.value)}
@@ -32,14 +32,16 @@ function PostUpdatePopup() {
         required
       />
 
-      <Link to={"/"} className="self-end">
-        <button
-          className="h-10 w-40 bg-marine rounded-md text-sea text-lg"
-          type="button"
-        >
-          Post
-        </button>
-      </Link>
+      <footer className="self-end">
+        <Link to={`/`}>
+          <button
+            className="h-10 w-40 bg-marine rounded-md text-sea text-lg"
+            type="button"
+          >
+            Post
+          </button>
+        </Link>
+      </footer>
     </aside>
   );
 }

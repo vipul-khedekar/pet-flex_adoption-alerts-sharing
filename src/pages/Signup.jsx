@@ -88,21 +88,25 @@ function Signup() {
 
   return (
     <main className="h-[100vh] w-[100vw] relative">
-      <section className="md:w-80 lg:w-96 absolute top-14 md:right-2 lg:right-36 text-choco">
-        <p className="mb-2 font-caveatBrush text-8xl">Pet Flex</p>
+      <article className="md:w-80 lg:w-96 absolute top-14 md:right-2 lg:right-36 text-choco">
+        <header>
+          <h3 className="mb-2 font-caveatBrush text-8xl">Pet Flex</h3>
+        </header>
 
-        <p className="ml-4 text-sm">‣ Search for pets to adoption</p>
+        <section>
+          <p className="ml-4 text-sm">‣ Search for pets to adoption</p>
 
-        <p className="ml-4 text-sm">‣ Bookmark the alerts</p>
+          <p className="ml-4 text-sm">‣ Bookmark the alerts</p>
 
-        <p className="ml-4 text-sm">‣ Social media for pet owners</p>
+          <p className="ml-4 text-sm">‣ Social media for pet owners</p>
 
-        <p className="ml-4 text-sm">‣ View without login, as a guest user</p>
-      </section>
+          <p className="ml-4 text-sm">‣ View without login, as a guest user</p>
+        </section>
+      </article>
 
-      <section className="md:w-80 lg:w-96 flex flex-col gap-4 absolute bottom-20 right-2 lg:bottom-20 lg:right-40 border-[2px] border-choco rounded-lg p-4">
+      <article className="md:w-80 lg:w-96 flex flex-col gap-4 absolute bottom-20 right-2 lg:bottom-20 lg:right-40 border-[2px] border-choco rounded-lg p-4">
         <form className="flex flex-col justify-center items-center gap-4">
-          <div className="flex flex-col">
+          <section className="flex flex-col">
             <label
               className="text-sm text-choco font-bold ml-2"
               htmlFor="email"
@@ -118,9 +122,9 @@ function Signup() {
               id="email"
               required
             />
-          </div>
+          </section>
 
-          <div className="flex flex-col">
+          <section className="flex flex-col">
             <label
               className="text-sm text-choco font-bold ml-2"
               htmlFor="username"
@@ -136,9 +140,9 @@ function Signup() {
               id="username"
               required
             />
-          </div>
+          </section>
 
-          <div className="flex flex-col">
+          <section className="flex flex-col">
             <label
               className="text-sm text-choco ml-2 font-bold"
               htmlFor="password"
@@ -154,9 +158,9 @@ function Signup() {
               id="password"
               required
             />
-          </div>
+          </section>
 
-          <div className="flex flex-col">
+          <section className="flex flex-col">
             <label
               className="text-sm text-choco ml-2 font-bold"
               htmlFor="password"
@@ -172,7 +176,7 @@ function Signup() {
               id="password"
               required
             />
-          </div>
+          </section>
 
           {isLoading ? (
             <Spinner />
@@ -191,11 +195,11 @@ function Signup() {
 
         <Link
           className="bg-choco px-3 py-1 mt-4 rounded-md text-sunny text-center"
-          to={"/"}
+          to={`/`}
         >
-          Go to login page
+          <button type="button">Go to login page</button>
         </Link>
-      </section>
+      </article>
 
       <img
         className="h-[100vh] w-[100vw] object-cover"

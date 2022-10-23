@@ -63,19 +63,23 @@ function Login() {
 
   return (
     <main className="h-[100vh] w-[100vw] relative">
-      <section className="md:w-80 lg:w-96 absolute top-14 md:right-2 lg:right-36 text-choco">
-        <p className="mb-2 font-caveatBrush text-8xl">Pet Flex</p>
+      <article className="md:w-80 lg:w-96 absolute top-14 md:right-2 lg:right-36 text-choco">
+        <header>
+          <h2 className="mb-2 font-caveatBrush text-8xl">Pet Flex</h2>
+        </header>
 
-        <p className="ml-4 text-sm">‣ Search for pets to adoption</p>
+        <section>
+          <p className="ml-4 text-sm">‣ Search for pets to adoption</p>
 
-        <p className="ml-4 text-sm">‣ Bookmark the alerts</p>
+          <p className="ml-4 text-sm">‣ Bookmark the alerts</p>
 
-        <p className="ml-4 text-sm">‣ Social media for pet owners</p>
+          <p className="ml-4 text-sm">‣ Social media for pet owners</p>
 
-        <p className="ml-4 text-sm">‣ View without login, as a guest user</p>
-      </section>
+          <p className="ml-4 text-sm">‣ View without login, as a guest user</p>
+        </section>
+      </article>
 
-      <section className="md:w-80 lg:w-96 flex flex-col gap-4 p-4 border-[2px] border-choco rounded-lg absolute bottom-28 right-2 lg:bottom-28 lg:right-40">
+      <article className="md:w-80 lg:w-96 flex flex-col gap-4 p-4 border-[2px] border-choco rounded-lg absolute bottom-28 right-2 lg:bottom-28 lg:right-40">
         <button
           onClick={() => handleGuestLogin()}
           className="bg-choco flex justify-center items-center gap-2 px-[6px] py-2 rounded-md text-sunny text-lg"
@@ -86,7 +90,7 @@ function Login() {
         </button>
 
         <form className="flex flex-col justify-center items-center gap-4">
-          <div className="flex flex-col">
+          <section className="flex flex-col">
             <label
               className="ml-2 text-choco text-sm font-bold"
               htmlFor="email"
@@ -101,9 +105,9 @@ function Login() {
               type="email"
               id="email"
             />
-          </div>
+          </section>
 
-          <div className="flex flex-col">
+          <section className="flex flex-col">
             <label
               className="ml-2 text-choco text-sm font-bold"
               htmlFor="password"
@@ -118,7 +122,7 @@ function Login() {
               type="password"
               id="password"
             />
-          </div>
+          </section>
 
           <button
             onClick={(e) => handleLogin(e)}
@@ -129,7 +133,7 @@ function Login() {
           </button>
         </form>
 
-        <div className="mt-4">
+        <section className="mt-4">
           <p className="text-xs">
             Dummy E-mail:{" "}
             <span className="text-base tracking-widest">
@@ -141,16 +145,15 @@ function Login() {
             Dummy Password:{" "}
             <span className="text-base tracking-widest">petlover333</span>
           </p>
-        </div>
+        </section>
 
         <Link
           className="bg-choco px-3 py-1 rounded-md text-sunny text-lg text-center"
-          to={"/signup"}
-          typeof="button"
+          to={`/signup`}
         >
-          I want to sign up
+          <button type="button">I want to sign up</button>
         </Link>
-      </section>
+      </article>
 
       <img
         className="h-[100vh] w-[100vw] object-cover"

@@ -35,7 +35,7 @@ function RightPanel() {
   };
 
   return (
-    <section className="flex flex-col flex-[3] justify-start items-center gap-4">
+    <article className="flex flex-col flex-[3] justify-start items-center gap-4">
       <SearchBar handleSearch={handleSearch} showAll={showAll} />
 
       {adoptionList.length !== 0 ? (
@@ -45,7 +45,7 @@ function RightPanel() {
           No matching results for the provided search query
         </article>
       )}
-    </section>
+    </article>
   );
 }
 
