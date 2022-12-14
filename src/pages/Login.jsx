@@ -63,7 +63,7 @@ function Login() {
 
   return (
     <main className="h-[100vh] w-[100vw] relative">
-      <article className="md:w-80 lg:w-96 absolute top-10 right-6 md:right-2 lg:right-36 text-choco">
+      <article className="md:w-80 lg:w-96 absolute top-10 right-6 lg:right-28 text-choco">
         <header>
           <h2 className="mb-2 font-caveatBrush text-8xl">Pet Flex</h2>
         </header>
@@ -79,7 +79,7 @@ function Login() {
         </section>
       </article>
 
-      <article className="md:w-80 lg:w-96 flex flex-col gap-4 p-4 border border-choco rounded-lg absolute bottom-12 right-2 lg:bottom-28 lg:right-40 island">
+      <article className="md:w-80 lg:w-[22rem] flex flex-col gap-4 p-4 border border-choco rounded-lg absolute bottom-12 right-2 lg:bottom-12 lg:right-36 island">
         <button
           onClick={() => handleGuestLogin()}
           className="bg-choco flex justify-center items-center gap-2 px-[6px] py-2 mb-2 rounded-md text-sunny text-lg"
