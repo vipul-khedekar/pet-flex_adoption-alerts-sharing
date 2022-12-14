@@ -55,6 +55,11 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--choco) transparent;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
