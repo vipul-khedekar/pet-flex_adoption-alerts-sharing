@@ -94,13 +94,13 @@ function Signup() {
         </header>
 
         <section>
-          <p className="ml-4 text-sm">‣ Search for pets to adoption</p>
+          <p className="ml-4 text-sm">‣ Search pets for adoption</p>
 
           <p className="ml-4 text-sm">‣ Bookmark the alerts</p>
 
-          <p className="ml-4 text-sm">‣ Social media for pet owners</p>
+          <p className="ml-4 text-sm">‣ View adoptions as a guest user</p>
 
-          <p className="ml-4 text-sm">‣ View without login, as a guest user</p>
+          <p className="ml-4 text-sm">‣ Social media for pet owners</p>
         </section>
       </article>
 
