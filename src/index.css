@@ -1,57 +1,58 @@
 :root {
-    --nero: #242424;
-    --steel: #6b7378;
-    --choco: #bc672c;
-    --cream: #ecddce;
-    --sunny: #eef4b1;
-    --sea: #acd7eb;
-    --marine: #00396a;
+  --nero: #242424;
+  --steel: #6b7378;
+  --choco: #bc672c;
+  --cream: #ecddce;
+  --sunny: #eef4b1;
+  --sea: #acd7eb;
+  --marine: #00396a;
 
-    --caveatBrush: 'Caveat Brush', cursive;
-    --nunito: 'Nunito', sans-serif;
+  --caveatBrush: "Caveat Brush", cursive;
+  --nunito: "Nunito", sans-serif;
 }
 
-html, body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    background-color: var(--sea);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    color: var(--marine);
-    font-family: var(--nunito);
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--sea);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: var(--marine);
+  font-family: var(--nunito);
 }
 
 button:active {
-    transform: translate(0, 3px);
+  transform: translate(0, 3px);
 }
 
 .modal-shadow {
-    box-shadow: 0 20px 300px black;
+  box-shadow: 0 20px 300px black;
 }
 
 .island {
-    box-shadow: 0 1px 4px var(--steel);
+  box-shadow: 0 1px 4px var(--steel);
 }
 
 /* Mozilla - remove number input arrows */
-input[type=number] {
-    -moz-appearance: textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 /* Chrome/Edge - remove number input arrows */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    margin: 0;
-    -webkit-appearance: none;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
 }
 
 @tailwind base;
