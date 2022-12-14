@@ -88,7 +88,7 @@ function Signup() {
 
   return (
     <main className="h-[100vh] w-[100vw] relative">
-      <article className="md:w-80 lg:w-96 absolute top-14 md:right-2 lg:right-36 text-choco">
+      <article className="md:w-80 lg:w-96 absolute top-10 right-6 md:right-2 lg:right-36 text-choco">
         <header>
           <h3 className="mb-2 font-caveatBrush text-8xl">Pet Flex</h3>
         </header>
@@ -104,7 +104,7 @@ function Signup() {
         </section>
       </article>
 
-      <article className="md:w-80 lg:w-96 flex flex-col gap-4 p-4 border border-choco rounded-lg absolute bottom-20 right-2 lg:bottom-20 lg:right-40 island">
+      <article className="md:w-80 lg:w-[22rem] flex flex-col gap-4 p-4 border border-choco rounded-lg absolute bottom-8 right-2 lg:bottom-20 lg:right-40 island">
         <form className="flex flex-col justify-center items-center gap-4">
           <section className="flex flex-col">
             <label
