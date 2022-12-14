@@ -33,11 +33,11 @@ function PetCard(props) {
   };
 
   return (
-    <section className="h-80 w-60 flex flex-col gap-2 p-2 border border-choco rounded-lg">
+    <section className="h-80 lg:w-56 flex flex-col gap-2 p-2 border border-choco rounded-lg">
       <p className="font-bold text-center">{petName}</p>
 
       <img
-        className="h-36 w-56 rounded-lg object-cover scale-100 ease-in duration-150 hover:scale-105"
+        className="h-36 w-56 lg:w-52 rounded-lg object-cover scale-100 ease-in duration-150 hover:scale-105"
         src={mediaLink}
         loading="lazy"
         alt="pet-pic"
