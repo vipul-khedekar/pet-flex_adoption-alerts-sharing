@@ -11,6 +11,12 @@ function PetCard(props) {
   const bookmarks = useSelector((state) => state.bookmarks);
   const [bookmarkList, setBookmarkList] = useState(bookmarks);
 
+  const messageSentAlert = (petName, petType) => {
+    alert(
+      `${petName} the ${petType}'s owner is nudged. They will get back to you soon.`
+    );
+  };
+
   const addBookmark = (id) => {
     if (bookmarkList.length > 0) {
       for (let i = 0; i < bookmarkList.length; i++) {
@@ -51,10 +57,11 @@ function PetCard(props) {
 
       <section className="flex flex-col gap-2 px-4">
         <button
+          onClick={() => messageSentAlert(petName, petType)}
           className="bg-choco px-3 py-1 rounded-md text-sunny"
           type="button"
         >
-          Send message
+          Contact Owner
         </button>
 
         <button
