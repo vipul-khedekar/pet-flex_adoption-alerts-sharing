@@ -7,3 +7,16 @@
 **Platform to search or post pet adoption alerts. It also acts as a social media for pet owners to share their pet's life. People without pets can also check it out with a guest login. The island and soft shadow design give a sense of depth to each major component from the background.**
 
 **Tech Stack: ReactJS, React Router, TailwindCSS, Redux, Javascript, React Icons, HTML, CSS and Firebase Storage.**
+
+## 👉 Colors Used
+
+_(Source: Imagination. I just named them whatever I wanted, because why not.)_ 🤷
+
+| Colors | Hex Code |
+| ------ | -------- |
+| Sea    | #acd7eb  |
+| Marine | #00396a  |
+| Choco  | #bc672c  |
+| Cream  | #ecddce  |
+| Steel  | #6b7378  |
+| Nero   | #242424  |
