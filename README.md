@@ -20,3 +20,14 @@ _(Source: Imagination. I just named them whatever I wanted, because why not.)_ �
 | Cream  | #ecddce  |
 | Steel  | #6b7378  |
 | Nero   | #242424  |
+
+## 👉 Credits for Assets
+
+_Thank you very much_ 🙂
+
+| Assets        | Name      | Link                      |
+| ------------- | --------- | ------------------------- |
+| Favicon       | Icons8    | https://icons8.com/       |
+| Fonts         | Google    | https://fonts.google.com/ |
+| Welcome Image | freepik   | https://www.freepik.com/  |
+| Pets Images   | Pinterest | https://in.pinterest.com/ |
