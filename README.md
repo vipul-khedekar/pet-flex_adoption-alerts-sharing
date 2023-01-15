@@ -8,7 +8,7 @@
 
 **Tech Stack: ReactJS, React Router, TailwindCSS, Redux, Javascript, React Icons, HTML, CSS and Firebase Storage.**
 
-## Major Features
+## 👉 Major Features
 
 _The core functionalities of the app:_
 
