@@ -60,7 +60,8 @@ _Little details that cumulatively add to a great user experience:_
 - **Short and quick downward animation for all button click events.**
   - Liking and disliking have a similar click animation.
 - **Smooth transition of most animations.**
-- **Icon appears next to the 'Post an Update' and 'Create an adoption alert' buttons, only on desktop view. (Not on tablet view due to space constraints)**
+- **Icon appears next to the 'Post an Update' and 'Create an adoption alert' buttons, only on desktop view.**
+  - Not on tablet view due to space constraints.
 - **If the adoption search yields no result, it will display a 'No match found message' instead of leaving it blank.**
 - **Alert is sent to the user upon successfully nudging the owner.**
 - **Hovering over the pet pictures in the adoptions section will slightly scale it up.**
