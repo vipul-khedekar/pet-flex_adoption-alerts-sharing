@@ -12,42 +12,42 @@
 
 _The core functionalities of the app:_
 
-- Authentication.
+- **Authentication.**
   - Users can navigate between the login and sign-up screens.
   - Can continue as a guest.
   - Create a new account.
   - Log in with dummy credentials. (Provided)
   - Small scale.
-- 404 "Page not found" error page will appear upon entering an unknown URL.
-- Anonymously sign in as a guest user.
+- **404 "Page not found" error page will appear upon entering an unknown URL.**
+- **Anonymously sign in as a guest user.**
   - Nameless one-time-only account.
-- Single screen multi-sectional dashboard.
+- **Single screen multi-sectional dashboard.**
   - Profile & Actions section.
   - Post feed section.
   - Adoption search and results section.
-- Search adoptions.
+- **Search adoptions.**
   - Search pets by animal type or name.
   - Added a fail-safe that needs at least a three or more-letter keyword from the user to start the search.
   - Show all button discards the previous search query.
-- Nudge the owner for inquiry. (A confirmation alert will pop up.)
-- Bookmarks.
+- **Nudge the owner for inquiry. (A confirmation alert will pop up.)**
+- **Bookmarks.**
   - Save available to adopt pets to view later.
   - Can delete individually.
-- Post an update on your pet.
-- Create a pet adoption alert.
-- Scrollable user feed with posts from pet owners of updates about their pets.
-- Like or dislike a post.
-- Adoption feed.
+- **Post an update on your pet.**
+- **Create a pet adoption alert.**
+- **Scrollable user feed with posts from pet owners of updates about their pets.**
+- **Like or dislike a post.**
+- **Adoption feed.**
   - Displays a list of pets available for adoption.
   - Each card displays a pet image, name, location, and options.
-- Post updates, Create an alert, View bookmarks, and View notifications options open on a new page.
+- **Post updates, Create an alert, View bookmarks, and View notifications options open on a new page.**
   - Clicking submit or close to navigate the user back to the main dashboard.
-- View notifications.
-- Logging out will send the user back to the login page.
-- Wrote reusable components.
+- **View notifications.**
+- **Logging out will send the user back to the login page.**
+- **Wrote reusable components.**
   - For Post body, Post actions, Pet card, and Bookmark strip.
   - Saved the development time by removing the need to write the same code for each recurring item.
-- Responsive design.
+- **Responsive design.**
   - Switching smoothly between 16:9 desktop and 3:4 tablet screen sizes.
 
 ## 👉 Colors Used
