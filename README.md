@@ -50,6 +50,24 @@ _The core functionalities of the app:_
 - **Responsive design.**
   - Switching smoothly between 16:9 desktop and 3:4 tablet screen sizes.
 
+## 👉 Quality of Life and Design Features
+
+_Little details that cumulatively add to a great user experience:_
+
+- **Island design with shadows gives depth to each major component from their background.**
+- **Short and quick downward animation for all button click events.**
+  - Liking and disliking have a similar click animation.
+- **Smooth transition of most animations.**
+- **Icon appears next to the 'Post an Update' and 'Create an adoption alert' buttons, only on desktop view. (Not on tablet view due to space constraints)**
+- **If the adoption search yields no result, it will display a 'No match found message' instead of leaving it blank.**
+- **Alert is sent to the user upon successfully nudging the owner.**
+- **Hovering over the pet pictures in the adoptions section will slightly scale it up.**
+- **Login and Sign-up welcome screen have a picture of a dog facing towards the form.**
+- **User profile contains profile picture, username, and ID tag.**
+- **Custom thin scrollbar design matching the theme.**
+- **Custom favicon.**
+- **Title of the web app in the browser's tab.**
+
 ## 👉 Colors Used
 
 _(Source: Imagination. I just named them whatever I wanted, because why not.)_ 🤷
