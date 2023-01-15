@@ -18,9 +18,11 @@ _The core functionalities of the app:_
   - Create a new account.
   - Log in with dummy credentials. (Provided)
   - Small scale.
+- **Lazy-loading images only load when they come into the visible part of the browser window, saving the user's bandwidth.**
 - **404 "Page not found" error page will appear upon entering an unknown URL.**
 - **Anonymously sign in as a guest user.**
   - Nameless one-time-only account.
+- **Used appropriate HTML tags promoting browser accessibility settings for specially-abled users.**
 - **Single screen multi-sectional dashboard.**
   - Profile & Actions section.
   - Post feed section.
