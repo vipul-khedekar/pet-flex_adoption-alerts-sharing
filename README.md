@@ -118,46 +118,51 @@ _Thank you very much_ 🙂
 <p align="center">(Fig.4 - Sign-up Form)</p><br />
 
 <div align="center">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fpet-flex%2FScreenshot%202022-12-19%20at%2021-49-00%20Pet%20Flex%20-%20An%20adoption%20and%20social%20media%20platform%20for%20pet%20owners.webp?alt=media&token=67ea74f4-eded-4ac5-8132-a3a581fc90bb" alt="404-error">
+</div>
+<p align="center">(Fig.5 - 404 Page Not Found Custom Redirect)</p><br />
+
+<div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fpet-flex%2FScreenshot%202022-12-19%20at%2021-46-12%20Pet%20Flex%20-%20An%20adoption%20and%20social%20media%20platform%20for%20pet%20owners.webp?alt=media&token=12983935-3c44-45da-9d9b-972107d5c37a" alt="feed">
 </div>
-<p align="center">(Fig.5 - Feed)</p><br />
+<p align="center">(Fig.6 - Feed)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fpet-flex%2FScreenshot%202022-12-19%20at%2021-47-01%20Pet%20Flex%20-%20An%20adoption%20and%20social%20media%20platform%20for%20pet%20owners.webp?alt=media&token=080c7282-e71a-460e-91ea-f45a80492ff7" alt="adoption-section">
 </div>
-<p align="center">(Fig.6 - Adoptions)</p><br />
+<p align="center">(Fig.7 - Adoptions)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fpet-flex%2FScreenshot%202022-12-19%20at%2021-45-24%20Pet%20Flex%20-%20An%20adoption%20and%20social%20media%20platform%20for%20pet%20owners.webp?alt=media&token=113b610d-74c9-481e-b6a7-0f9992084978" alt="profile-actions">
 </div>
-<p align="center">(Fig.7 - Profile Actions)</p><br />
+<p align="center">(Fig.8 - Profile Actions)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fpet-flex%2FScreenshot%202022-12-19%20at%2021-46-25%20Pet%20Flex%20-%20An%20adoption%20and%20social%20media%20platform%20for%20pet%20owners.webp?alt=media&token=ffafb30f-8cc0-4939-8929-72421b5ea721" alt="liked-paw">
 </div>
-<p align="center">(Fig.8 - Liked Paw)</p><br />
+<p align="center">(Fig.9 - Liked Paw)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fpet-flex%2FScreenshot%202022-12-19%20at%2021-46-46%20Pet%20Flex%20-%20An%20adoption%20and%20social%20media%20platform%20for%20pet%20owners.webp?alt=media&token=12f7379d-e175-4a5f-bd46-7c19aeee1adb" alt="unliked-paw">
 </div>
-<p align="center">(Fig.9 - Unliked Paw)</p><br />
+<p align="center">(Fig.10 - Unliked Paw)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fpet-flex%2FScreenshot%202022-12-19%20at%2021-48-08%20Pet%20Flex%20-%20An%20adoption%20and%20social%20media%20platform%20for%20pet%20owners.webp?alt=media&token=e8cf240e-41f5-4071-bd95-523270b1407d" alt="create-alert">
 </div>
-<p align="center">(Fig.10 - Create an Alert)</p><br />
+<p align="center">(Fig.11 - Create an Alert)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fpet-flex%2FScreenshot%202022-12-19%20at%2021-48-26%20Pet%20Flex%20-%20An%20adoption%20and%20social%20media%20platform%20for%20pet%20owners.webp?alt=media&token=96e1855d-1fe2-4582-9559-a19925bbc43e" alt="post-update">
 </div>
-<p align="center">(Fig.11 - Post an Update)</p><br />
+<p align="center">(Fig.12 - Post an Update)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fpet-flex%2FScreenshot%202022-12-19%20at%2021-49-00%20Pet%20Flex%20-%20An%20adoption%20and%20social%20media%20platform%20for%20pet%20owners.webp?alt=media&token=67ea74f4-eded-4ac5-8132-a3a581fc90bb" alt="bookmarked-list">
 </div>
-<p align="center">(Fig.12 - Bookmarked List)</p><br />
+<p align="center">(Fig.13 - Bookmarked List)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fpet-flex%2FScreenshot%202022-12-19%20at%2021-47-42%20Pet%20Flex%20-%20An%20adoption%20and%20social%20media%20platform%20for%20pet%20owners.webp?alt=media&token=93f6ae4d-b00f-4c30-8957-7a032648005d" alt="searched">
 </div>
-<p align="center">(Fig.13 - Search Result)</p>
+<p align="center">(Fig.14 - Search Result)</p>
