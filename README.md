@@ -118,7 +118,7 @@ _Thank you very much_ 🙂
 <p align="center">(Fig.4 - Sign-up Form)</p><br />
 
 <div align="center">
-    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fpet-flex%2FScreenshot%202022-12-19%20at%2021-49-00%20Pet%20Flex%20-%20An%20adoption%20and%20social%20media%20platform%20for%20pet%20owners.webp?alt=media&token=67ea74f4-eded-4ac5-8132-a3a581fc90bb" alt="404-error">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fpet-flex%2FScreenshot%202023-01-19%20at%2021-42-21%20Pet%20Flex%20-%20An%20adoption%20and%20social%20media%20platform%20for%20pet%20owners.webp?alt=media&token=3155b026-72b1-4e33-992d-4689be5b44ef" alt="404-error">
 </div>
 <p align="center">(Fig.5 - 404 Page Not Found Custom Redirect)</p><br />
 
